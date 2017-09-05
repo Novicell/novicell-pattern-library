@@ -1,1 +1,1 @@
-# novicell-pattern-library
+# Novicell Pattern Library
