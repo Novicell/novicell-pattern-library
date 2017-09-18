@@ -21,3 +21,9 @@ For more information take a look at http://fractal.build/guide.
 ```sh
 fractal start --sync
 ```
+
+Install dependencies.
+
+```sh
+npm install
+```
