@@ -2,11 +2,17 @@
 
 #### Getting started
 
+Clone this repo.
+
+```sh
+git clone git@github.com:Novicell/novicell-pattern-library.git
+```
+
 If you have not done it already, install Fractal.
 Read more about Fractal here: http://fractal.build/guide
 
 ```sh
-npm install --save @frctl/fractal
+npm i -g @frctl/fractal
 ```
 
 Run the command below for starting the local server with sync.
