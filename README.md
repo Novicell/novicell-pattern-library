@@ -5,7 +5,7 @@
 Clone this repo.
 
 ```sh
-git clone git@github.com:Novicell/novicell-pattern-library.git
+git clone https://github.com/Novicell/novicell-pattern-library.git
 ```
 
 If you have not done it already, install Fractal.
