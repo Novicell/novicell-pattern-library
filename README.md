@@ -2,10 +2,11 @@
 
 #### Getting started
 
-Clone Novicell Default Frontend setup.
+If you have not done it already, install Fractal.
+Read more about Fractal here: http://fractal.build/guide
 
 ```sh
-git clone git@github.com:Novicell/novicell-frontend.git
+npm install --save @frctl/fractal
 ```
 
 Run the command below for starting the local server with sync.
