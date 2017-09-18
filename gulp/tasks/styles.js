@@ -33,10 +33,7 @@ gulp.task('styles', function () {
             .pipe(plugins.lesshint())
             .pipe(plugins.lesshint.reporter())
             .pipe(plugins.less())
-            .pipe(plugins.rename({
-                suffix: ".min",
-                extname: ".css"
-            }))
+            .pipe(plugins.concat(b.name + '.min.css'))
             .pipe(plugins.cssnano(cssnanoSettings))
             .pipe(plugins.sourcemaps.write('.'))
             .pipe(gulp.dest(config.stylesDist));
