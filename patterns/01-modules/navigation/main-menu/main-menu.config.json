@@ -1,4 +1,6 @@
 {
+  "title": "Main menu",
+  "status": "prototype"
   "context": {
     "items": [{
       "url": "url 1",
