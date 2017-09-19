@@ -1,0 +1,20 @@
+{
+  "title": "Button",
+  "status": "prototype",
+  "context": {
+    "button": {
+      "text": "Button"
+    },
+    "mainMenu": {
+      "items": [{
+        "url": "#",
+        "text": "Forside",
+        "title": "Forside"
+      },{
+        "url": "#",
+        "text": "Produkter",
+        "title": "Produkter"
+      }]
+    }
+  }
+}
