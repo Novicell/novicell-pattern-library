@@ -27,3 +27,9 @@ Install dependencies.
 ```sh
 npm install
 ```
+
+Building the static site.
+
+```sh
+fractal build
+```
