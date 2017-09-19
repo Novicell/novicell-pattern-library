@@ -15,20 +15,20 @@ Read more about Fractal here: http://fractal.build/guide
 npm i -g @frctl/fractal
 ```
 
-Run the command below for starting the local server with sync.
-For more information take a look at http://fractal.build/guide.
-
-```sh
-fractal start --sync
-```
-
 Install dependencies.
 
 ```sh
 npm install
 ```
 
-Building the static site.
+Run the command below for starting the local server with watch and sync.
+For more information take a look at http://fractal.build/guide.
+
+```sh
+fractal start -w -s
+```
+
+For building the static site run:
 
 ```sh
 fractal build
