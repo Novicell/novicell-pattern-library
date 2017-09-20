@@ -5,6 +5,9 @@
     "button": {
       "text": "Button"
     },
+    "buttonDisabled": {
+      "text": "Disabled Button"
+    },
     "mainMenu": {
       "items": [{
         "url": "#",

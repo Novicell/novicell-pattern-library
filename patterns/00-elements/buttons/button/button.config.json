@@ -3,5 +3,20 @@
   "status": "prototype",
   "context": {
     "text": "Button"
-  }
+  },
+  "variants": [
+    {
+      "name": "disabled",
+      "context": {
+        "text": "Disabled Button",
+        "class": "button--disabled"
+      }
+    },
+    {
+      "name": "another",
+      "context": {
+        "text": "Another Button"
+      }
+    }
+  ]
 }
