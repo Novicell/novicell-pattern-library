@@ -16,6 +16,11 @@ const fractal = module.exports = require('@frctl/fractal').create();
 fractal.set('project.title', 'Novicell Pattern Library');
 
 /*
+ * Tell Fractal which preview file to use.
+ */
+fractal.components.set('default.preview', '@preview');
+
+/*
  * Tell Fractal where to look for components.
  */
 fractal.components.set('path', path.join(__dirname, 'patterns'));
@@ -28,7 +33,7 @@ fractal.docs.set('path', path.join(__dirname, 'documentation'));
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
-fractal.web.set('static.path', path.join(__dirname, '/assets'));
+fractal.web.set('static.path', path.join(__dirname, '/dist'));
 
 /*
  * Tell Fractal where to build to.
