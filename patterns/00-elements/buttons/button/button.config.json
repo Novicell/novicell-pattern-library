@@ -8,8 +8,7 @@
     {
       "name": "disabled",
       "context": {
-        "text": "Disabled Button",
-        "class": "button--disabled"
+        "text": "Disabled Button"
       }
     },
     {
