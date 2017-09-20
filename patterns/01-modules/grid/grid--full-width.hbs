@@ -1,6 +1,13 @@
 {{> @grid }}
 
-{{#*inline "grid-content"}}
-  {{#> grid-full-width-content mode="append"}}
-  {{/grid-full-width-content}}
-{{/inline}}
+{{#extend "grid" foo="bar"}}
+  {{#content "content"}}
+    Content
+  {{/content}}
+{{/extend}}
+
+{{#extend @grid foo="bar"}}
+  {{#content "content"}}
+    Content
+  {{/content}}
+{{/extend}}
