@@ -1,18 +1,13 @@
 {
-  "title": "Page",
+  "title": "Another page",
   "status": "prototype",
   "context": {
-    "button": {
-      "text": "Button"
-    },
-    "buttonDisabled": {
-      "text": "Disabled Button"
-    },
     "mainMenu": {
       "items": [{
         "url": "#",
         "text": "Forside",
-        "title": "Forside"
+        "title": "Forside",
+        "active": "main-menu--active"
       },{
         "url": "#",
         "text": "Produkter",
