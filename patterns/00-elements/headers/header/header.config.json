@@ -1,0 +1,17 @@
+{
+  "title": "Header",
+  "status": "prototype",
+  "context": {
+    "text": "Header"
+  },
+  "variants": [
+    {
+      "name": "column",
+      "context": {
+        "text": "Column header",
+        "class": "header__column"
+      }
+    }
+  ]
+}
+  
