@@ -1,3 +1,29 @@
-{{> @main-menu mainMenu }}
+{{> @grid--full-width }}
 
-{{> @header--column testHeader }}
+  {{#*inline "grid-full-width-content"}}
+
+
+  {{/inline}}
+
+
+{{> @grid--two-columns }}
+
+  {{#*inline "grid-two-columns-content"}}
+    {{> @grid-item }}
+      {{#*inline "grid-item-content"}}
+        <div>Column 1</div>
+      {{/inline}}
+
+    {{> @grid-item }}
+      {{#*inline "grid-item-content"}}
+        <div>Column 2</div>
+      {{/inline}}
+
+  {{/inline}}
+
+
+{{> @grid--full-width }}
+
+  {{#*inline "grid-full-width-content"}}
+    Another full grid
+  {{/inline}}
