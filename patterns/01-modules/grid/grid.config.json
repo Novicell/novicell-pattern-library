@@ -1,0 +1,20 @@
+{
+  "title": "grid",
+  "status": "prototype",
+  "context": {
+  },
+  "variants": [
+    {
+      "name": "full-width",
+      "context": {
+        "class": "grid--full-width"
+      }
+    },
+    {
+      "name": "two-columns",
+      "context": {
+        "class": "grid--two-columns"
+      }
+    }
+  ]
+}
