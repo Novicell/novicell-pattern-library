@@ -1,0 +1,21 @@
+{
+    "title": "Link Social",
+    "status": "prototype",
+    "context": {
+        "url": "#",
+        "title": "Social link",
+        "target": "",
+        "icon": "facebook-icon"
+    },
+    "variants": [
+      {
+        "name": "Facebook",
+        "context": {
+            "url": "#",
+            "title": "Facebook link",
+            "target": "",
+            "icon": "facebook-icon"
+        }
+      }
+    ]
+}

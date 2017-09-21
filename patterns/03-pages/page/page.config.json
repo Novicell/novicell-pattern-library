@@ -5,8 +5,11 @@
     "button": {
       "text": "Button"
     },
-    "buttonDisabled": {
-      "text": "Disabled Button"
+    "buttonGhost": {
+      "text": "Ghost Button"
+    },
+    "linkButton": {
+      "text": "Link Button"
     },
     "mainMenu": {
       "items": [{
@@ -19,11 +22,14 @@
         "title": "Produkter"
       }]
     },
+    "headerPage": {
+      "text": "Page header"
+    },
     "testHeader": {
       "text": "Test header"
     },
     "columnHeader": {
-      "text": "Column header :)"
+      "text": "Column header"
     }
   }
 }

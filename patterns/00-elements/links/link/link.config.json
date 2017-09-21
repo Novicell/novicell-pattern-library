@@ -1,0 +1,11 @@
+{
+  "title": "Main menu link",
+  "status": "prototype",
+  "context": {
+    "url": "url",
+    "text": "Link text",
+    "target":"",
+    "title": "Link title"
+  }
+}
+  

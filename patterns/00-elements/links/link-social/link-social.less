@@ -1,0 +1,40 @@
+/*
+ * Element: Link Social
+ */
+
+//Setting document variables
+@social-background-color: @color-gray;
+@social-color: @color-gray-dark;
+@facebook-color: @color-primary;
+@icon-color: @color-white;
+
+.social-link {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: @social-background-color;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        background: darken(@social-background-color, 10%);
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        fill: @social-color;
+    }
+
+    &--facebook {
+        background-color: @facebook-color;
+
+        .social-link__icon {
+            fill: @icon-color;
+        }
+    }
+}
