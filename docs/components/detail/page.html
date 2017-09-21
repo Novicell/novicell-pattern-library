@@ -153,16 +153,19 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-7f770a5d54d3d64b4ad867b303e2195a-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/global/logo.png"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/global/logo.png"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button__another"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button__disabled"</span>&gt;</span>Disabled Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button--ghost"</span>&gt;</span>Ghost Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">title</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"url"</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-main"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"navigation"</span> <span class="hljs-attr">vocab</span>=<span class="hljs-string">"http://schema.org/"</span> <span class="hljs-attr">typeof</span>=<span class="hljs-string">"SiteNavigationElement"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-main-list"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Forside"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">""</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"url"</span>&gt;</span>Forside<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Produkter"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">""</span> <span class="hljs-attr">property</span>=<span class="hljs-string">"url"</span>&gt;</span>Produkter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header-page "</span>&gt;</span>Page header<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header "</span>&gt;</span>Test header<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header header__column"</span>&gt;</span>Column header<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -172,9 +175,12 @@
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"></span><span class="hljs-template-variable">{{&gt; <a href="logo.html">@logo</a> }}</span><span class="xml">
 </span><span class="hljs-template-variable">{{&gt; <a href="button.html">@button</a> button }}</span><span class="xml">
-</span><span class="hljs-template-variable">{{&gt; <a href="button.html">@button</a>--another button }}</span><span class="xml">
-</span><span class="hljs-template-variable">{{&gt; <a href="button.html">@button</a>--disabled buttonDisabled }}</span><span class="xml">
-</span><span class="hljs-template-variable">{{&gt; <a href="main-menu.html">@main-menu</a> mainMenu }}</span><span class="xml"></span></pre>
+</span><span class="hljs-template-variable">{{&gt; <a href="button.html">@button</a>--ghost buttonGhost }}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; <a href="link-button.html">@link-button</a> linkButton}}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; <a href="main-menu.html">@main-menu</a> mainMenu }}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; <a href="header-page.html">@header-page</a> headerPage}}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; <a href="header.html">@header</a> testHeader}}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; <a href="header.html">@header</a>--column columnHeader}}</span><span class="xml"></span></pre>
     </code>
 </div>
 
@@ -187,8 +193,11 @@
   <span class="hljs-attr">"button"</span>: {
     <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Button"</span>
   },
-  <span class="hljs-attr">"buttonDisabled"</span>: {
-    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Disabled Button"</span>
+  <span class="hljs-attr">"buttonGhost"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Ghost Button"</span>
+  },
+  <span class="hljs-attr">"linkButton"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Link Button"</span>
   },
   <span class="hljs-attr">"mainMenu"</span>: {
     <span class="hljs-attr">"items"</span>: [
@@ -203,6 +212,15 @@
         <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Produkter"</span>
       }
     ]
+  },
+  <span class="hljs-attr">"headerPage"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Page header"</span>
+  },
+  <span class="hljs-attr">"testHeader"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Test header"</span>
+  },
+  <span class="hljs-attr">"columnHeader"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Column header"</span>
   }
 }</pre>
             
@@ -251,18 +269,24 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(5)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(8)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="logo.html">@<span>logo</span></a>, 
             
                 <a href="button.html">@<span>button</span></a>, 
             
-                <a href="button--another.html">@<span>button--another</span></a>, 
+                <a href="button--ghost.html">@<span>button--ghost</span></a>, 
             
-                <a href="button--disabled.html">@<span>button--disabled</span></a>, 
+                <a href="link-button.html">@<span>link-button</span></a>, 
             
-                <a href="main-menu.html">@<span>main-menu</span></a>
+                <a href="main-menu.html">@<span>main-menu</span></a>, 
+            
+                <a href="header-page.html">@<span>header-page</span></a>, 
+            
+                <a href="header.html">@<span>header</span></a>, 
+            
+                <a href="header--column.html">@<span>header--column</span></a>
             
             </span>
         </li class="Meta-item">
@@ -368,32 +392,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button--disabled.html" data-pjax>
-                <span>Disabled</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button--another.html" data-pjax>
-                <span>Another</span>
+            <a class="Tree-entityLink" href="button--ghost.html" data-pjax>
+                <span>Ghost</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -474,6 +474,246 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="header--column.html" data-pjax>
                 <span>Column</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="header-page.html" data-pjax>
+                <span>Header Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-links">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Links</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="link.html" data-pjax>
+                <span>Link</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-link-button">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Link Button</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="link-button--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="link-button--link-ghost.html" data-pjax>
+                <span>Link Ghost</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="link-button--ghost.html" data-pjax>
+                <span>Ghost</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-link-social">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Link Social</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="link-social--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="link-social--facebook.html" data-pjax>
+                <span>Facebook</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="link-social--twitter.html" data-pjax>
+                <span>Twitter</span>
                 
 
 <div class="Status Status--unlabelled">
