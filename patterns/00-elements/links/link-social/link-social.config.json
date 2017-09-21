@@ -4,7 +4,7 @@
     "context": {
         "url": "#",
         "title": "Social link",
-        "target": "",
+        "target": "_blank",
         "icon": "facebook-icon"
     },
     "variants": [
@@ -13,8 +13,15 @@
         "context": {
             "url": "#",
             "title": "Facebook link",
-            "target": "",
             "icon": "facebook-icon"
+        }
+      },
+      {
+        "name": "Twitter",
+        "context": {
+            "url": "#",
+            "title": "Twitter link",
+            "icon": "twitter-icon"
         }
       }
     ]
