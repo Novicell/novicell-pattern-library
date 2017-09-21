@@ -11,6 +11,18 @@ const path = require('path');
 const fractal = module.exports = require('@frctl/fractal').create();
 
 /*
+ * Add layouts helper
+ */
+const hbs = require('@frctl/handlebars');
+
+const instance = fractal.components.engine(hbs);
+
+// Using handlebars-layouts (https://www.npmjs.com/package/handlebars-layouts)
+
+const layouts = require('handlebars-layouts');
+layouts.register(instance.handlebars);
+
+/*
  * Give your project a title.
  */
 fractal.set('project.title', 'Novicell Pattern Library');
@@ -39,22 +51,3 @@ fractal.web.set('static.path', path.join(__dirname, '/dist'));
  * Tell Fractal where to build to.
  */
 fractal.web.set('builder.dest', __dirname + '/docs');
-
-
-const hbs = require('@frctl/handlebars')({
-  /* configuration options here */
-});
-
-const instance = fractal.components.engine(hbs);
-
-// Using handlebars-layouts (https://www.npmjs.com/package/handlebars-layouts)
-
-const layouts = require('handlebars-layouts');
-layouts.register(instance.handlebars);
-
-// Using handlebars-helpers (https://github.com/assemble/handlebars-helpers)
-
-const helpers = require('handlebars-helpers');
-helpers({
-  handlebars: instance.handlebars
-});

@@ -6,15 +6,9 @@
   },
   "variants": [
     {
-      "name": "disabled",
+      "name": "ghost",
       "context": {
-        "text": "Disabled Button"
-      }
-    },
-    {
-      "name": "another",
-      "context": {
-        "text": "Another Button"
+        "text": "Ghost Button"
       }
     }
   ]

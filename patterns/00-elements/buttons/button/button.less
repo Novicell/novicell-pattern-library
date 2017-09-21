@@ -1,37 +1,40 @@
-/**
- * Base: Buttons
+/*
+ * Element: Buttons
  */
 
-@color-primary: red;
-@base-font-family: Arial;
-@color-white: white;
-@color-text: black;
+//Setting document variables
+@button-color-primary: @color-primary;
+@button-color-white: @color-white;
+@button-color-text: @color-text;
+
+@button-base-font-family: @base-font-family;
+
 
 // Default button
 .button {
-
     display: inline-block;
     text-align: center;
     vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    background-color: @color-primary;
+    background-color: @button-color-primary;
     white-space: nowrap;
     user-select: none;
     position: relative;
     font-weight: 400;
-    font-family: @base-font-family;
+    font-family: @button-base-font-family;
+    font-size: 14px;
     transition: background .3s, color .3s, border-color .3s;
     padding: 10px 20px;
-    color: @color-white;
+    color: @button-color-white;
     border: 1px solid transparent;
     text-decoration: none;
 
     &:hover,
     &:focus {
-        color: @color-white;
-        background: darken(@color-primary, 10%);
+        color: @button-color-white;
+        background: darken(@button-color-primary, 10%);
         text-decoration: none;
         outline: none;
     }
@@ -42,14 +45,14 @@
 
     // Ghost button
     &--ghost {
-        color: @color-text;
-        border: solid 1px @color-primary;
+        color: @button-color-text;
+        border: solid 1px @button-color-primary;
         background-color: transparent;
 
         &:hover,
         &:focus {
-            color: @color-white;
-            background-color: @color-primary;
+            color: @button-color-white;
+            background-color: @button-color-primary;
         }
     }
 }

@@ -1,6 +1,6 @@
-{{> @grid }}
-
-{{#*inline "grid-content"}}
-  {{#> grid-two-columns-content}}
-  {{/grid-two-columns-content}}
-{{/inline}}
+{{#extend "@grid"}}
+  {{#content "grid-content"}}
+    {{#block "content"}}
+    {{/block}}
+  {{/content}}
+{{/extend}}

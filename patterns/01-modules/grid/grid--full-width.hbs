@@ -1,13 +1,6 @@
-{{> @grid }}
-
-{{#extend "grid" foo="bar"}}
-  {{#content "content"}}
-    Content
-  {{/content}}
-{{/extend}}
-
-{{#extend @grid foo="bar"}}
-  {{#content "content"}}
-    Content
+{{#extend "@grid"}}
+  {{#content "grid-content"}}
+    {{#block "content"}}
+    {{/block}}
   {{/content}}
 {{/extend}}
