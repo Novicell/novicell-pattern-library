@@ -1,34 +1,35 @@
-{{#extend "grid"}}
+{{#extend "@grid--full-width"}}
   {{#content "content"}}
-    Content
+
+    {{#extend "@grid-item"}}
+      {{#content "grid-item-content"}}
+        Grid item 1-1
+      {{/content}}
+    {{/extend}}
+
+    {{#extend "@grid-item"}}
+      {{#content "grid-item-content"}}
+        Grid item 1-2
+      {{/content}}
+    {{/extend}}
+
   {{/content}}
 {{/extend}}
 
-{{> @grid--full-width }}
+{{#extend "@grid--full-width"}}
+  {{#content "content"}}
 
-  {{#*inline "grid-full-width-content"}}
-    test
-  {{/inline}}
+    {{#extend "@grid-item"}}
+      {{#content "grid-item-content"}}
+        Grid item 2-1
+      {{/content}}
+    {{/extend}}
 
+    {{#extend "@grid-item"}}
+      {{#content "grid-item-content"}}
+        Grid item 2-2
+      {{/content}}
+    {{/extend}}
 
-{{> @grid--two-columns }}
-
-  {{#*inline "grid-two-columns-content"}}
-    {{> @grid-item }}
-      {{#*inline "grid-item-content"}}
-        <div>Column 1</div>
-      {{/inline}}
-
-    {{> @grid-item }}
-      {{#*inline "grid-item-content"}}
-        <div>Column 2</div>
-      {{/inline}}
-
-  {{/inline}}
-
-
-{{> @grid--full-width }}
-
-  {{#*inline "grid-full-width-content"}}
-    Another full grid
-  {{/inline}}
+  {{/content}}
+{{/extend}}
