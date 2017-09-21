@@ -18,6 +18,12 @@
         "text": "Produkter",
         "title": "Produkter"
       }]
+    },
+    "testHeader": {
+      "text": "Test header"
+    },
+    "columnHeader": {
+      "text": "Column header :)"
     }
   }
 }

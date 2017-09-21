@@ -30,10 +30,10 @@ gulp.task('styles', function () {
         return gulp.src(b.styles)
             .pipe(plugins.plumber(config.errorHandler('styles')))
             .pipe(plugins.sourcemaps.init())
-            .pipe(plugins.lesshint())
-            .pipe(plugins.lesshint.reporter())
+            //.pipe(plugins.lesshint())
+            //.pipe(plugins.lesshint.reporter())
             .pipe(plugins.less())
-            .pipe(plugins.concat(b.name + '.min.css'))
+             .pipe(plugins.concat(b.name + '.min.css'))
             .pipe(plugins.cssnano(cssnanoSettings))
             .pipe(plugins.sourcemaps.write('.'))
             .pipe(gulp.dest(config.stylesDist));

@@ -32,7 +32,7 @@ module.exports = (function () {
                     projectPath + "scripts/components/novicell.overlay.js",
                     projectPath + "scripts/master.js"
                 ],
-                styles: [ lessPath ],
+                styles: [ projectPath + "patterns/_base/master.less" ],
                 images: [ projectPath + "images/**/*.{jpg,png,svg,gif}"],
                 html: [ projectPath + "html/*.html" ]
             },
