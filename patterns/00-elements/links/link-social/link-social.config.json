@@ -23,6 +23,14 @@
             "title": "Twitter link",
             "icon": "twitter-icon"
         }
+      },
+      {
+        "name": "Google Plus",
+        "context": {
+            "url": "#",
+            "title": "Google Plus link",
+            "icon": "google-plus-icon"
+        }
       }
     ]
 }
