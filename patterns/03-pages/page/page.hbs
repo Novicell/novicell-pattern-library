@@ -1,9 +1,41 @@
-{{> @logo }}
-{{> @button button }}
-{{> @button--ghost buttonGhost }}
-{{> @link-button linkButton}}
+{{#extend "@grid--full-width"}}
+  {{#content "content"}}
+    {{#extend "@grid-item"}}
+      {{#content "grid-item-content"}}
+        {{> @logo }}
+      {{/content}}
+    {{/extend}}
+    {{#extend "@grid-item"}}
+      {{#content "grid-item-content"}}
+        {{> @button button }}
+      {{/content}}
+    {{/extend}}
+  {{/content}}
+{{/extend}}
+
+{{#extend "@grid--two-columns"}}
+  {{#content "content"}}
+    {{#extend "@grid-item"}}
+      {{#content "grid-item-content"}}
+        {{> @button--ghost buttonGhost }}
+      {{/content}}
+    {{/extend}}
+    {{#extend "@grid-item"}}
+      {{#content "grid-item-content"}}
+        {{> @link-button linkButton}}
+      {{/content}}
+    {{/extend}}
+  {{/content}}
+{{/extend}}
+
+
+
+
+
 {{> @main-menu mainMenu }}
 {{> @header-page headerPage}}
 {{> @header testHeader}}
 {{> @header--column columnHeader}}
 {{> @input--text inputText}}
+{{> @social-media-collection }}
+{{> @form-field--password password }}

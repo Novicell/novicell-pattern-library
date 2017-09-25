@@ -32,7 +32,11 @@
       "text": "Column header"
     },
     "inputText": {
-      "text": "password"
+      "placeholder": "hej"
+    },
+    "password": {
+      "label-text": "Label",
+      "input-id": "default-id" 
     }
   }
 }

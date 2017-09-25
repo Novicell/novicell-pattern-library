@@ -1,7 +1,20 @@
+/*
+* Element: Input fields
+*/
+
+//Setting document variables
+@input-text-color: @color-text;
+@input-background-color: @color-white;
+@input-background-color-disabled: @color-gray;
+@input-border-color: @color-gray-light;
+
+@input-font-family: @base-font-family;
+
+
 .input {
     display: block;
     width: 100%;
-    min-height: 100px;
+    height: 40px;
     padding: 0 20px;
     font-size: 16px;
     line-height: 1;
@@ -12,4 +25,6 @@
     border: 1px solid @input-border-color;
     border-radius: 100px;
     vertical-align: bottom;
+
+    &:focus {outline: 0;}
 }
