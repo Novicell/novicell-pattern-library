@@ -1,0 +1,10 @@
+{
+  "title": "Textarea",
+  "status": "prototype",
+  "context": {
+      "label-text": "textarea label",
+      "input-name": "textarea-input",
+      "input-id": "textarea-id",
+      "placeholder": "Teatarea" 
+  }
+} 

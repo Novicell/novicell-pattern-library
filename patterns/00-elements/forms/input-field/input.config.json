@@ -1,0 +1,29 @@
+{
+  "title": "Input",
+  "status": "prototype",
+  "context": {
+      "label-text": "label",
+      "type": "text",
+      "input-name": "defaul-input",
+      "input-id": "default-id",
+      "palceholder": "Default"
+  },
+  "variants": [
+    {
+      "name": "text",
+      "context": {
+        "label-text": "text label",
+        "input-name": "text-input",
+        "input-id": "text-id"
+      }
+    },
+    {
+      "name": "email",
+      "context": {
+        "label-text": "email label",
+        "input-name": "email-input",
+        "input-id": "email-id"
+      }
+    }
+  ]
+} 

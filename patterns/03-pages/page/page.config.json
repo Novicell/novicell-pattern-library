@@ -30,6 +30,9 @@
     },
     "columnHeader": {
       "text": "Column header"
+    },
+    "inputText": {
+      "text": "password"
     }
   }
 }
