@@ -4,8 +4,8 @@
   "context": {
       "label-text": "label",
       "type": "text",
-      "input-name": "defaul-input",
-      "input-id": "default-id",
+      "name": "defaul-input",
+      "id": "default-id",
       "placeholder": "Default"
   },
   "variants": [
@@ -13,8 +13,8 @@
       "name": "text",
       "context": {
         "label-text": "text label",
-        "input-name": "text-input",
-        "input-id": "text-id",
+        "name": "text-input",
+        "id": "text-id",
         "placeholder": "inset text"
       }
     },
@@ -22,8 +22,8 @@
       "name": "email",
       "context": {
         "label-text": "email label",
-        "input-name": "email-input",
-        "input-id": "email-id",
+        "name": "email-input",
+        "id": "email-id",
         "placeholder": "inset e-mail"
       }
     },
@@ -31,8 +31,8 @@
       "name": "password",
       "context": {
         "label-text": "password label",
-        "input-name": "password-input",
-        "input-id": "password-id",
+        "name": "password-input",
+        "id": "password-id",
         "placeholder": "inset password"
       }
     }

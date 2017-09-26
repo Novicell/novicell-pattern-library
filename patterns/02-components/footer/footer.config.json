@@ -1,0 +1,52 @@
+{
+	"title": "footer",
+	"status": "prototype",
+	"context": {
+		"columnHeader1": {
+			"text": "Kontaktoplysninger"
+		},
+		"columnHeader2": {
+			"text": "Kundeservice"
+		},
+		"links": {
+			"items": [{
+				"url": "url 1",
+				"text": "Link text 1",
+				"title": "Link title 1"
+			},{
+				"url": "url 2",
+				"text": "Link text 2",
+				"title": "Link title 2"
+			},{
+				"url": "url 3",
+				"text": "Link text 3",
+				"title": "Link title 3"
+			}]
+		},
+		"columnHeader3": {
+			"text": "Spørgsmål? Skriv endelig :)"
+		},
+		"input-name": {
+			"label-text": "Navn",
+			"placeholder": "Skriv dit navn",
+			"id": "name",
+			"name": "name"
+		},
+		"input-email": {
+			"label-text": "E-mail",
+			"placeholder": "Skriv din mail",
+			"id": "email",
+			"name": "email"
+		},
+		"input-textarea": {
+			"label-text": "Besked",
+			"placeholder": "Skriv din besked",
+			"id": "message",
+			"name": "message"
+		},
+		"submitButton": {
+			"text": "Send",
+			"class": "button--footer"
+		}
+	}
+}
