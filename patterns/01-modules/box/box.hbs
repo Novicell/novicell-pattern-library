@@ -1,0 +1,12 @@
+<article class="box">
+  {{#block "header"}}
+  {{/block}}
+  <div class="box-inner">
+    {{> @header--column }}
+    {{#block "content"}}
+      <p>{{ box.content }}</p>
+    {{/block}}
+  </div>
+  {{#block "footer"}}
+  {{/block}}
+</article>

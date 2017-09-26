@@ -1,0 +1,15 @@
+{
+  "title": "box",
+  "status": "prototype",
+  "context": {
+    "header": {
+      "text": "Header"
+    },
+    "box": {
+      "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
+    }
+  },
+  "variants": [
+
+  ]
+}
