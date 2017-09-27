@@ -3,13 +3,18 @@
     {{#extend "@grid-column"}}
       {{#content "grid-column-content"}}
         {{> @header--column columnHeader1}}
+        {{> @paragraph cvr }}
+        {{> @paragraph contact }}
+        <p>Telefon: <a href="tel:28908808">7252 0000</a> </p> | <p>E-mail: <a>fragt@fragt.dk </a></p>
+        {{> @paragraph }}
+        {{> @link-phone }} |
         {{> @social-media-collection }}
       {{/content}}
     {{/extend}}
     {{#extend "@grid-column"}}
       {{#content "grid-column-content"}}
         {{> @header--column columnHeader2}}
-		{{> @link-list links }}
+		    {{> @link-list links }}
       {{/content}}
     {{/extend}}
     {{#extend "@grid-column"}}
@@ -18,7 +23,7 @@
         {{> @form-field input-name }}
         {{> @form-field--email input-email }}
         {{> @form-field--textarea input-textarea }}
-        {{> @button submitButton }}
+        {{> @button--spacing-top submitButton }}
       {{/content}}
     {{/extend}}
   {{/content}}

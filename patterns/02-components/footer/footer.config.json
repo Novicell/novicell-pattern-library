@@ -5,6 +5,12 @@
 		"columnHeader1": {
 			"text": "Kontaktoplysninger"
 		},
+		"cvr": {
+			"text": "CVR 1354354"
+		},
+		"contact": {
+			"text": "Telefon: 7252 0000 | E-mail: fragt@fragt.dk"
+		},
 		"columnHeader2": {
 			"text": "Kundeservice"
 		},
@@ -45,8 +51,7 @@
 			"name": "message"
 		},
 		"submitButton": {
-			"text": "Send",
-			"class": "button--footer"
+			"text": "Send"
 		}
 	}
 }

@@ -1,11 +1,29 @@
 {
-  "title": "Main menu link",
+  "title": "Link",
   "status": "prototype",
   "context": {
     "url": "url",
     "text": "Link text",
     "target":"",
     "title": "Link title"
-  }
+  },
+  "variants": [
+    {
+      "name": "Phone",
+      "context": {
+        "url": "72520000",
+        "title": "phone number",
+        "text": "7252 0000"
+      }
+    },
+    {
+      "name": "Email",
+      "context": {
+        "url": "mail@mail.dk",
+        "title": "e-mail",
+        "text": "mail@mail.dk"
+      }
+    }
+  ]
 }
   
