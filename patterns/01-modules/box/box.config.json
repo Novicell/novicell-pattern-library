@@ -1,15 +1,25 @@
 {
-  "title": "box",
+  "title": "Box",
   "status": "prototype",
   "context": {
     "header": {
-      "text": "Header"
+      "text": "Box header"
     },
     "box": {
-      "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
+      "content": "Box content."
     }
   },
   "variants": [
-
+    {
+      "name": "image",
+      "context": {
+        "header": {
+          "text": "Image box header"
+        },
+        "box": {
+          "content": "Image box content."
+        }
+      }
+    }
   ]
 }

@@ -9,15 +9,37 @@
 @box-spacing-top: 10px;
 @box-paragraph-spacing-top: 15px;
 
-.box {
+.box,
+.box__image {
   &-inner {
-    background: @box-background-color;
     border: @box-border-style;
     border-radius: @box-border-radius;
-    padding: @box-padding;
   }
 
   p + p {
     margin-top: @box-paragraph-spacing-top;
+  }
+}
+
+.box {
+  &-inner {
+    background: @box-background-color;
+    padding: @box-padding;
+  }
+}
+
+.box__image {
+  &-inner {
+    background-image: url('https://unsplash.it/400/300');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  &-content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
   }
 }

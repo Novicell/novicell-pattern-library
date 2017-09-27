@@ -1,11 +1,13 @@
-<article class="box">
+<article class="box{{ class }}">
   {{#block "header"}}
   {{/block}}
-  <div class="box-inner">
-    {{> @header--column }}
-    {{#block "content"}}
-      <p>{{ box.content }}</p>
-    {{/block}}
+  <div class="box{{ class }}-inner">
+    <div class="box{{ class }}-content">
+      {{> @header--column }}
+      {{#block "content"}}
+        <p>{{ box.content }}</p>
+      {{/block}}
+    </div>
   </div>
   {{#block "footer"}}
   {{/block}}
