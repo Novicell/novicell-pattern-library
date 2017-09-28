@@ -3,13 +3,15 @@
 	"status": "prototype",
 	"context": {
 		"columnHeader1": {
-			"text": "Kontaktoplysninger"
+			"header": {
+				"text": "Kontaktoplysninger"
+			}
 		},
 		"cvr": {
 			"text": "CVR 1354354"
 		},
 		"contact": {
-			"text": "Telefon: 7252 0000 | E-mail: fragt@fragt.dk"
+			"phone": "Telefon: 7252 0000 | E-mail: email@example.com"
 		},
 		"columnHeader2": {
 			"text": "Kundeservice"

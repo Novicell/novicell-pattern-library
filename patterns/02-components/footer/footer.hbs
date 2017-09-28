@@ -3,6 +3,12 @@
     {{#extend "@grid-column"}}
       {{#content "grid-column-content"}}
         {{> @header--column columnHeader1}}
+        {{#extend '@rte' }}
+          {{#content "rte-content"}}
+            asdsadasd
+          {{/content}}        
+        {{/extend}}
+
         {{> @paragraph cvr }}
         {{> @paragraph contact }}
         {{> @social-media-collection }}

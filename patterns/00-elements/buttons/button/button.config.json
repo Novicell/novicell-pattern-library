@@ -2,13 +2,25 @@
   "title": "Button",
   "status": "prototype",
   "context": {
-    "text": "Button"
+    "button": {
+      "text": "Button"
+    }
   },
   "variants": [
     {
       "name": "ghost",
       "context": {
-        "text": "Ghost Button"
+        "button": {
+          "text": "Ghost Button"
+        }
+      }
+    },
+    {
+      "name": "spacing-top",
+      "context": {
+        "button": {
+          "text": "Spacing top Button"
+        }
       }
     }
   ]

@@ -1,8 +1,9 @@
 {
-  "title": "Header Page",
-  "status": "prototype",
-  "context": {
-    "text": "Header Page"
-  }
+	"title": "Header Page",
+	"status": "prototype",
+	"context": {
+		"header-page": {
+			"text": "Header Page"
+		}
+	}
 }
-  

@@ -1,11 +1,63 @@
 {
-  "title": "form field",
-  "status": "prototype",
-  "context": {
-    "label-text": "Label",
-    "id": "label-id",
-    "name": "label"
-  }
+	"title": "form field",
+	"status": "prototype",
+	"context": {
+		"label": {
+			"text": "Label",
+			"id": "default-id"
+		},
+		"input": {
+			"type": "text",
+			"name": "defaul-input",
+			"id": "default-id",
+			"placeholder": "Default"
+		}	
+	},
+	"variants": [
+		{
+			"name": "email",
+			"context": {
+				"label": {
+					"text": "Email Label",
+					"id": "email-id"
+				},	
+				"input": {
+					"type": "email",
+					"name": "email-input",
+					"id": "email-id",
+					"placeholder": "Inset e-mail"
+				}
+			}
+		},
+		{
+			"name": "password",
+			"context": {
+				"label": {
+					"text": "Password Label",
+					"id": "password-id"
+				},
+				"input": {
+					"type": "password",
+					"name": "password-input",
+					"id": "password-id",
+					"placeholder": "Inset password"
+				}
+			}
+		},
+		{
+			"name": "textarea",
+			"context": {
+				"label": {
+					"text": "Textarea Label",
+					"id": "textarea-id"
+				},
+				"textarea": {
+					"name": "textarea",
+					"id": "textareaId",
+					"placeholder": "This is a textarea"
+				}	
+			}
+		}
+	]
 }
-
   
