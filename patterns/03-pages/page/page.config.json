@@ -20,6 +20,10 @@
         "url": "#",
         "text": "Produkter",
         "title": "Produkter"
+      },{
+        "url": "#",
+        "text": "Kontakt",
+        "title": "Kontakt"
       }]
     },
     "headerPage": {
@@ -30,6 +34,13 @@
     },
     "columnHeader": {
       "text": "Column header"
+    },
+    "inputText": {
+      "placeholder": "hej"
+    },
+    "password": {
+      "label-text": "Label",
+      "input-id": "default-id" 
     }
   }
 }

@@ -2,7 +2,9 @@
   "title": "Header",
   "status": "prototype",
   "context": {
-    "text": "Header"
+    "header": {
+      "text": "Header"
+    }
   },
   "variants": [
     {

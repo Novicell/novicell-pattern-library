@@ -1,0 +1,8 @@
+{
+  "title": "Label",
+  "status": "prototype",
+  "context": {
+      "label-text": "Label",
+      "id": "default-id"
+  }
+} 
