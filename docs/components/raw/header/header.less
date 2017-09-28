@@ -5,14 +5,17 @@
 //Setting document variables
 @header-color-primary: @color-primary;
 @header-color-secondary: @color-secondary;
+@header-color-black: @color-black;
 
 .header {
+    color: @header-color-primary;
     font-size: 22px;
     font-weight: 600;
-    color: @header-color-primary; 
     font-family: @header-font-family;
-    
+    margin-bottom: 0;
+    margin-top: 0;
+
     &__column {
-        color: @header-color-secondary;
+        color: @header-color-black;
     }
 }

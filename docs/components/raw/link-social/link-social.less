@@ -8,6 +8,7 @@
 
 @facebook-background-color: @color-facebook;
 @twitter-background-color: @color-twitter;
+@google-plus-background-color: @color-google-plus;
 
 
 .social-link {
@@ -47,6 +48,15 @@
         &:hover,
         &:focus {
             background: darken(@twitter-background-color, 10%);
+        }
+    }
+
+    &--google-plus { 
+        background-color: @google-plus-background-color;
+
+        &:hover,
+        &:focus {
+            background: darken(@google-plus-background-color, 10%);
         }
     }
 }
