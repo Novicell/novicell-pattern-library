@@ -1,20 +1,20 @@
 {
-  "title": "Header",
-  "status": "prototype",
-  "context": {
-    "header": {
-      "text": "Header"
-    }
-  },
-  "variants": [
-    {
-      "type": "h1",
-      "name": "column",
-      "context": {
-        "text": "Column header",
-        "class": "header__column"
-      }
-    }
-  ]
+	"title": "Header",
+	"status": "prototype",
+	"context": {
+		"header": {
+			"text": "Header"
+		}
+	},
+	"variants": [
+		{
+			"type": "h1",
+			"name": "column",
+			"context": {
+				"header": {
+					"text": "Column header"
+				}
+			}
+		}
+	]
 }
-  

@@ -1,14 +1,14 @@
 <article class="box{{ class }}">
-  {{#block "header"}}
-  {{/block}}
-  <div class="box{{ class }}__inner">
-    <div class="box{{ class }}__content">
-      {{> @header--column }}
-      {{#block "content"}}
-        <p>{{ box.content }}</p>
-      {{/block}}
-    </div>
-  </div>
-  {{#block "footer"}}
-  {{/block}}
+	{{#block "header"}}
+	{{/block}}
+	<div class="box{{ class }}__inner">
+		<div class="box{{ class }}__content">
+			{{> @header--column }}
+			{{#block "content"}}
+				<p>{{ box.content }}</p>
+			{{/block}}
+		</div>
+	</div>
+	{{#block "footer"}}
+	{{/block}}
 </article>

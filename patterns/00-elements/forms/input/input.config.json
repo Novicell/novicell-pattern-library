@@ -1,40 +1,47 @@
 {
-  "title": "Input",
-  "status": "prototype",
-  "context": {
-      "label-text": "label",
-      "type": "text",
-      "name": "defaul-input",
-      "id": "default-id",
-      "placeholder": "Default"
-  },
-  "variants": [
-    {
-      "name": "text",
-      "context": {
-        "label-text": "text label",
-        "name": "text-input",
-        "id": "text-id",
-        "placeholder": "inset text"
-      }
-    },
-    {
-      "name": "email",
-      "context": {
-        "label-text": "email label",
-        "name": "email-input",
-        "id": "email-id",
-        "placeholder": "inset e-mail"
-      }
-    },
-    {
-      "name": "password",
-      "context": {
-        "label-text": "password label",
-        "name": "password-input",
-        "id": "password-id",
-        "placeholder": "inset password"
-      }
-    }
-  ]
+	"title": "Input",
+	"status": "prototype",
+	"context": {
+		"input": {
+			"type": "text",
+			"name": "defaul-input",
+			"id": "default-id",
+			"placeholder": "Default"
+		}
+	},
+	"variants": [
+		{
+			"name": "text",
+			"context": {
+				"input": {
+					"type": "text",
+					"name": "text-input",
+					"id": "text-id",
+					"placeholder": "Inset text"
+				}
+			}
+		},
+		{
+			"name": "email",
+			"context": {
+				"input": {
+					"type": "email",
+					"name": "email-input",
+					"id": "email-id",
+					"placeholder": "Inset e-mail"
+				}
+			}
+		},
+		{
+			"name": "password",
+			"context": {
+				"input": {
+					"type": "password",
+					"name": "password-input",
+					"id": "password-id",
+					"placeholder": "Inset password"
+				}
+			}
+		}
+	]
 } 

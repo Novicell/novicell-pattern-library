@@ -2,14 +2,21 @@
     "title": "List of links",
     "status": "prototype",
     "context": {
-        "items": [{
-            "url": "url 1",
-            "text": "Link text 1",
-            "title": "Link title 1"
-        },{
-            "url": "url 2",
-            "text": "Link text 2",
-            "title": "Link title 2"
-        }]
+        "link-list": [
+            {
+                "link": {
+                    "url": "#",
+                    "text": "Link text 1",
+                    "title": "Link title 1"
+                }
+            },
+            {
+                "link": {
+                    "url": "#",
+                    "text": "Link text 2",
+                    "title": "Link title 2"
+                }
+            }
+        ]
     }
 }

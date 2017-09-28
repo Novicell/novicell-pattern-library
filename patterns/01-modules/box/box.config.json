@@ -1,25 +1,25 @@
 {
-  "title": "Box",
-  "status": "prototype",
-  "context": {
-    "header": {
-      "text": "Box header"
-    },
-    "box": {
-      "content": "Box content."
-    }
-  },
-  "variants": [
-    {
-      "name": "image",
-      "context": {
-        "header": {
-          "text": "Image box header"
-        },
-        "box": {
-          "content": "Image box content."
-        }
-      }
-    }
-  ]
+	"title": "Box",
+	"status": "prototype",
+	"context": {
+		"header": {
+			"text": "Box header"
+		},
+		"box": {
+			"content": "Box content."
+		}
+	},
+	"variants": [
+		{
+			"name": "image",
+			"context": {
+				"header": {
+					"text": "Image box header"
+				},
+				"box": {
+					"content": "Image box content."
+				}
+			}
+		}
+	]
 }
