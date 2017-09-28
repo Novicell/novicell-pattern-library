@@ -1,18 +1,28 @@
 {
-  "title": "grid",
-  "status": "prototype",
-  "context": {
-  },
-  "variants": [
-    {
-      "name": "full-width",
-      "context": {
-      }
-    },
-    {
-      "name": "two-columns",
-      "context": {
-      }
-    }
-  ]
+	"title": "grid",
+	"status": "prototype",
+	"context": {
+	},
+	"variants": [
+		{
+			"name": "full-width",
+			"context": {
+			}
+		},
+		{
+			"name": "site-width",
+			"context": {
+			}
+		},
+		{
+			"name": "two-columns",
+			"context": {
+			}
+		},
+		{
+			"name": "three-columns",
+			"context": {
+			}
+		}
+	]
 }
