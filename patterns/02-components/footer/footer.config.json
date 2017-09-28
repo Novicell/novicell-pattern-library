@@ -3,31 +3,39 @@
 	"status": "prototype",
 	"context": {
 		"columnHeader1": {
-			"text": "Kontaktoplysninger"
-		},
-		"cvr": {
-			"text": "CVR 1354354"
-		},
-		"contact": {
-			"text": "Telefon: 7252 0000 | E-mail: fragt@fragt.dk"
+			"header": {
+				"text": "Kontaktoplysninger"
+			}
 		},
 		"columnHeader2": {
-			"text": "Kundeservice"
+			"header": {
+				"text": "Kundeservice"
+			}
 		},
 		"links": {
-			"items": [{
-				"url": "url 1",
-				"text": "Link text 1",
-				"title": "Link title 1"
-			},{
-				"url": "url 2",
-				"text": "Link text 2",
-				"title": "Link title 2"
-			},{
-				"url": "url 3",
-				"text": "Link text 3",
-				"title": "Link title 3"
-			}]
+			"link-list": [
+				{
+					"link": {
+						"url": "#",
+						"text": "Link text 1",
+						"title": "Link title 1"
+					}
+				},
+				{
+					"link": {
+						"url": "#",
+						"text": "Link text 2",
+						"title": "Link title 2"
+					}
+				},
+				{
+					"link": {
+						"url": "#",
+						"text": "Link text 3",
+						"title": "Link title 3"
+					}
+				}
+			]
 		},
 		"columnHeader3": {
 			"text": "Spørgsmål? Skriv endelig :)"
