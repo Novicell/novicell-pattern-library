@@ -3,7 +3,8 @@
   "status": "prototype",
   "context": {
     "label-text": "Label",
-    "input-id": "label-id"
+    "id": "label-id",
+    "name": "label"
   }
 }
 
