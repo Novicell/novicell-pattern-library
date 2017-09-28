@@ -2,20 +2,30 @@
 	"title": "Site navigation",
 	"status": "prototype",
 	"context": {
-		"mainMenu": {
-			"items": [{
-				"url": "#",
-				"text": "Forside",
-				"title": "Forside"
-			},{
-				"url": "#",
-				"text": "Produkter",
-				"title": "Produkter"
-			},{
-				"url": "#",
-				"text": "Kontakt",
-				"title": "Kontakt"
-			}]
+		"nav-main-list": {
+			"link-list": [
+					{
+						"link": {
+							"url": "#",
+							"text": "Link text 1",
+							"title": "Link title 1"
+						}
+					},
+					{
+						"link": {
+							"url": "#",
+							"text": "Link text 2",
+							"title": "Link title 2"
+						}
+					},
+					{
+						"link": {
+							"url": "#",
+							"text": "Link text 3",
+							"title": "Link title 3"
+						}
+					}
+				]
 		},
 		"links": {
 			"items": [{
