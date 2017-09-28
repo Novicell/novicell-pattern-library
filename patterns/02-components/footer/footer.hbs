@@ -5,13 +5,13 @@
         {{> @header--column columnHeader1}}
         {{#extend '@rte' }}
           {{#content "rte-content"}}
-            asdsadasd
-          {{/content}}        
+            <p>Novicell Aarhus</p>
+            Søren Nymarks Vej 6<br>
+            8270 Højbjerg,<br>
+            Denmark<br>
+          {{/content}}
         {{/extend}}
-
-        {{> @paragraph cvr }}
-        {{> @paragraph contact }}
-        {{> @social-media-collection }}
+        {{ render '@social-media-collection' }}
       {{/content}}
     {{/extend}}
     {{#extend "@grid-column"}}

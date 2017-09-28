@@ -2,20 +2,5 @@
   "title": "social media collection",
   "status": "prototype",
   "context": {
-    "twitter": {
-    "url": "#",
-    "title": "Twitter link",
-    "icon": "twitter-icon"
-    },
-    "google": {
-    "url": "#",
-    "title": "Google Plus link",
-    "icon": "google-plus-icon"
-    },
-    "facebook": {
-    "url": "#",
-    "title": "Facebook link",
-    "icon": "facebook-icon"
-    }
   }
 }
