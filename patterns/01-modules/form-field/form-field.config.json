@@ -25,7 +25,7 @@
 					"type": "email",
 					"name": "email-input",
 					"id": "email-id",
-					"placeholder": "Inset e-mail"
+					"placeholder": "Insert e-mail"
 				}
 			}
 		},
@@ -40,7 +40,7 @@
 					"type": "password",
 					"name": "password-input",
 					"id": "password-id",
-					"placeholder": "Inset password"
+					"placeholder": "Insert password"
 				}
 			}
 		},
