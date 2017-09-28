@@ -1,0 +1,52 @@
+/*
+ * Module: Box
+ */
+
+@box-background-color: @color-white;
+@box-border-style: 1px solid @color-gray-light;
+@box-border-radius: 4px;
+@box-content-opacity: 25%;
+@box-min-height: 300px;
+@box-padding: 20px;
+@box-spacing-top: 10px;
+@box-paragraph-spacing-top: 15px;
+
+.box,
+.box-image {
+    &__inner {
+        border: @box-border-style;
+        border-radius: @box-border-radius;
+    }
+
+    p + p {
+        margin-top: @box-paragraph-spacing-top;
+    }
+}
+
+.box {
+    &__inner {
+        background: @box-background-color;
+        padding: @box-padding;
+    }
+}
+
+.box-image {
+    position: relative;
+
+    &__inner {
+        background-image: url('https://unsplash.it/400/300');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: @box-min-height;
+        position: relative;
+    }
+
+    &__content {
+        background-color: fadeout(@box-background-color, @box-content-opacity);
+        bottom: 0;
+        left: 0;
+        padding: @box-padding;
+        position: absolute;
+        right: 0;
+    }
+}
