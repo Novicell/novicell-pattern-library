@@ -165,7 +165,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-ca204d0018945adc1715f5659818840b-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ id }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{ label-text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ label.id }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{ label.text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -175,8 +175,10 @@
         
             
             <pre>{
-  <span class="hljs-attr">"label-text"</span>: <span class="hljs-string">"Label"</span>,
-  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"default-id"</span>
+  <span class="hljs-attr">"label"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Label"</span>,
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"default-id"</span>
+  }
 }</pre>
             
         
@@ -194,13 +196,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-18f72c3e6ea627f756447cd3ce997c3b">label.less</option>
+                <option value="file-d21be23fe1a7c91a656e0fc4dcfa4a16">label.less</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-18f72c3e6ea627f756447cd3ce997c3b" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-d21be23fe1a7c91a656e0fc4dcfa4a16" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -239,11 +241,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">patterns/00-elements/forms/label/label.less</span>
+                    <span class="Meta-value">patterns\00-elements\forms\label\label.less</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">418 Bytes</span>
+                    <span class="Meta-value">437 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -284,7 +286,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">patterns/00-elements/forms/label/label.hbs</span>
+            <span class="Meta-value">patterns\00-elements\forms\label\label.hbs</span>
         </li>
         
         
@@ -1338,8 +1340,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--two-columns.html" data-pjax>
-                <span>Two Columns</span>
+            <a class="Tree-entityLink" href="grid--site-width.html" data-pjax>
+                <span>Site Width</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1362,8 +1364,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--site-width.html" data-pjax>
-                <span>Site Width</span>
+            <a class="Tree-entityLink" href="grid--two-columns.html" data-pjax>
+                <span>Two Columns</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1514,32 +1516,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="main-menu.html" data-pjax>
-                <span>Main Menu</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="main-menu-link.html" data-pjax>
-                <span>Main Menu Link</span>
+            <a class="Tree-entityLink" href="nav-main-list.html" data-pjax>
+                <span>Nav Main List</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1561,6 +1539,30 @@
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="rte.html" data-pjax>
+                <span>Rte</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     
