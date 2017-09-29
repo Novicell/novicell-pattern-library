@@ -14,14 +14,6 @@
           "text": "Ghost Button"
         }
       }
-    },
-    {
-      "name": "spacing-top",
-      "context": {
-        "button": {
-          "text": "Spacing top Button"
-        }
-      }
     }
   ]
 }

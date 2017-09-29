@@ -38,28 +38,47 @@
 			]
 		},
 		"columnHeader3": {
-			"text": "Spørgsmål? Skriv endelig :)"
+			"header": {
+				"text": "Spørgsmål? Skriv endelig :)"
+			}
 		},
 		"input-name": {
-			"label-text": "Navn",
-			"placeholder": "Skriv dit navn",
-			"id": "name",
-			"name": "name"
+			"label": {
+				"text": "Navn",
+				"input-id": "name"
+			},
+			"input": {
+				"placeholder": "Skriv dit navn",
+				"id": "name",
+				"name": "name"
+			}
 		},
 		"input-email": {
-			"label-text": "E-mail",
-			"placeholder": "Skriv din mail",
-			"id": "email",
-			"name": "email"
+			"label": {
+				"text": "E-mail",
+				"input-id": "email"
+			},
+			"input": {
+				"placeholder": "Skriv din mail",
+				"id": "email",
+				"name": "email"
+			}
 		},
 		"input-textarea": {
-			"label-text": "Besked",
-			"placeholder": "Skriv din besked",
-			"id": "message",
-			"name": "message"
+			"label": {
+				"text": "Besked",
+				"input-id": "message"
+			},
+			"textarea": {
+				"placeholder": "Skriv din besked",
+				"id": "message",
+				"name": "message"
+			}
 		},
 		"submitButton": {
-			"text": "Send"
+			"button": {
+				"text": "Send"
+			}
 		}
 	}
 }
