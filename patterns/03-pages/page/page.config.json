@@ -3,44 +3,72 @@
   "status": "prototype",
   "context": {
     "button": {
-      "text": "Button"
+      "button": {
+        "text": "Button"
+      } 
     },
     "buttonGhost": {
-      "text": "Ghost Button"
+      "button": {
+        "text": "Ghost Button"
+      }
     },
     "linkButton": {
-      "text": "Link Button"
+      "link-button": {
+        "text": "Link Button"
+      }
     },
     "mainMenu": {
-      "items": [{
-        "url": "#",
-        "text": "Forside",
-        "title": "Forside"
+      "link-list": [{
+        "link": {
+          "url": "#",
+          "text": "Forside",
+          "title": "Forside"
+        }
       },{
-        "url": "#",
-        "text": "Produkter",
-        "title": "Produkter"
+        "link": {
+          "url": "#",
+          "text": "Produkter",
+          "title": "Produkter"
+        }
       },{
-        "url": "#",
-        "text": "Kontakt",
-        "title": "Kontakt"
+        "link": {
+          "url": "#",
+          "text": "Kontakt",
+          "title": "Kontakt"
+        }
       }]
     },
     "headerPage": {
-      "text": "Page header"
+      "header-page": {
+        "text": "Page header"
+      }
     },
     "testHeader": {
-      "text": "Test header"
+      "header": {
+        "text": "Test header"
+      }
     },
     "columnHeader": {
-      "text": "Column header"
+      "header": {
+        "text": "Column header"
+      }
     },
-    "inputText": {
-      "placeholder": "hej"
+    "inputText": { 
+      "input": {
+        "placeholder": "hej",
+        "type": "text"
+      }
     },
     "password": {
-      "label-text": "Label",
-      "input-id": "default-id" 
+      "label": {
+        "text": "Label",
+        "id": "password-id"
+      },
+      "input": {
+        "id": "password-id",
+        "type": "password",
+        "placeholder": "Password"
+      }
     }
   }
 }
