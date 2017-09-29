@@ -2,7 +2,7 @@
 	"title": "Box",
 	"status": "prototype",
 	"context": {
-		"header": {
+		"heading": {
 			"text": "Box header"
 		},
 		"box": {

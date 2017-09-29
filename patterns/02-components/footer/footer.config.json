@@ -3,12 +3,12 @@
 	"status": "prototype",
 	"context": {
 		"columnHeader1": {
-			"header": {
+			"heading": {
 				"text": "Kontaktoplysninger"
 			}
 		},
 		"columnHeader2": {
-			"header": {
+			"heading": {
 				"text": "Kundeservice"
 			}
 		},
@@ -38,7 +38,7 @@
 			]
 		},
 		"columnHeader3": {
-			"header": {
+			"heading": {
 				"text": "Spørgsmål? Skriv endelig :)"
 			}
 		},

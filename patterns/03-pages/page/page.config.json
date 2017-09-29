@@ -39,17 +39,17 @@
       }]
     },
     "headerPage": {
-      "header-page": {
+      "heading-page": {
         "text": "Page header"
       }
     },
     "testHeader": {
-      "header": {
+      "heading": {
         "text": "Test header"
       }
     },
     "columnHeader": {
-      "header": {
+      "heading": {
         "text": "Column header"
       }
     },

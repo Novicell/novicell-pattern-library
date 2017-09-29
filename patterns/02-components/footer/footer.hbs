@@ -2,7 +2,7 @@
   {{#content "content"}}
     {{#extend "@grid-column"}}
       {{#content "grid-column-content"}}
-        {{> @header--column columnHeader1}}
+        {{> @heading--column columnHeader1}}
         {{#extend '@rich-text-editor' }}
           {{#content "rte-content"}} 
             <p>Novicell Aarhus</p>
@@ -16,13 +16,13 @@
     {{/extend}}
     {{#extend "@grid-column"}}
       {{#content "grid-column-content"}}
-        {{> @header--column columnHeader2}}
+        {{> @heading--column columnHeader2}}
 		    {{> @link-list links }}
       {{/content}}
     {{/extend}}
     {{#extend "@grid-column"}}
       {{#content "grid-column-content"}}
-        {{> @header--column columnHeader3}}
+        {{> @heading--column columnHeader3}}
         {{> @form-field input-name }}
         {{> @form-field--email input-email }}
         {{> @form-field--textarea input-textarea }}

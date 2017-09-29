@@ -2,7 +2,7 @@
 	"title": "Header",
 	"status": "prototype",
 	"context": {
-		"header": {
+		"heading": {
 			"text": "Header"
 		}
 	},
@@ -11,7 +11,7 @@
 			"type": "h1",
 			"name": "column",
 			"context": {
-				"header": {
+				"heading": {
 					"text": "Column header"
 				}
 			}

@@ -2,7 +2,7 @@
 	"title": "Header Page",
 	"status": "prototype",
 	"context": {
-		"header-page": {
+		"heading-page": {
 			"text": "Header Page"
 		}
 	}
