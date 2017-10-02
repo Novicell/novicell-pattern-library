@@ -1,0 +1,14 @@
+<article class="box-image">
+	{{#block "header"}}
+	{{/block}}
+	<div class="box-image__inner">
+		<div class="box-image__content">
+			{{> @heading--column }}
+			{{#block "content"}}
+				<p>{{ box.content }}</p>
+			{{/block}}
+		</div>
+	</div>
+	{{#block "footer"}}
+	{{/block}}
+</article>

@@ -1,0 +1,38 @@
+/*
+ * Module: Box Image
+ */
+
+@box-background-color: @color-white;
+@box-border-style: 1px solid @color-gray-light;
+@box-border-radius: 4px;
+@box-content-opacity: 25%;
+@box-min-height: 300px;
+@box-padding: 20px;
+@box-paragraph-spacing-top: 15px;
+
+.box-image {
+    position: relative;
+
+    &__inner {
+        border: @box-border-style;
+        border-radius: @box-border-radius;
+        background-image: url('https://unsplash.it/400/300');
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: @box-min-height;
+        position: relative;
+    }
+
+    &__content {
+        background-color: fadeout(@box-background-color, @box-content-opacity);
+        bottom: 0;
+        left: 0;
+        padding: @box-padding;
+        position: absolute;
+        right: 0;
+    }
+
+    p + p {
+        margin-top: @box-paragraph-spacing-top;
+    }
+}

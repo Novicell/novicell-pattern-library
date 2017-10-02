@@ -4,7 +4,7 @@
 	"context": {
 		"label": {
 			"text": "Label",
-			"id": "default-id"
+			"input-id": "default-id"
 		},
 		"input": {
 			"type": "text",
@@ -19,7 +19,7 @@
 			"context": {
 				"label": {
 					"text": "Email Label",
-					"id": "email-id"
+					"input-id": "email-id"
 				},	
 				"input": {
 					"type": "email",
@@ -34,7 +34,7 @@
 			"context": {
 				"label": {
 					"text": "Password Label",
-					"id": "password-id"
+					"input-id": "password-id"
 				},
 				"input": {
 					"type": "password",
@@ -49,7 +49,7 @@
 			"context": {
 				"label": {
 					"text": "Textarea Label",
-					"id": "textarea-id"
+					"input-id": "textarea-id"
 				},
 				"textarea": {
 					"name": "textarea",

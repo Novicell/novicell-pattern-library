@@ -36,7 +36,7 @@
         <article class="box-image">
         	<div class="box-image__inner">
         		<div class="box-image__content">
-        			<p class="header header__column">Header1</p>
+        			<p class="heading heading__column"></p>
         				<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo.</p>
         		</div>
         	</div>
@@ -46,7 +46,7 @@
         <article class="box-image">
         	<div class="box-image__inner">
         		<div class="box-image__content">
-        			<p class="header header__column">Header2</p>
+        			<p class="heading heading__column"></p>
         				<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo.</p>
         		</div>
         	</div>
@@ -56,7 +56,7 @@
         <article class="box-image">
         	<div class="box-image__inner">
         		<div class="box-image__content">
-        			<p class="header header__column">Header3</p>
+        			<p class="heading heading__column"></p>
         				<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo.</p>
         		</div>
         	</div>
@@ -66,8 +66,8 @@
 
 <div class="grid grid--three-columns">
 <div class="grid-column">
-        <p class="header header__column">Kontaktoplysninger</p>
-<div class="wysiwyg">
+        <p class="heading heading__column">Kontaktoplysninger</p>
+<div class="rte">
             <p>Novicell Aarhus</p>
             Søren Nymarks Vej 6<br>
             8270 Højbjerg,<br>
@@ -101,7 +101,7 @@
 </ul>
 </div>
 <div class="grid-column">
-        <p class="header header__column">Kundeservice</p>
+        <p class="heading heading__column">Kundeservice</p>
 		    <ul class="link-list">
 		            <li class="link-list__item ">
 		                <a href="#" title="Link title 1" target="" class="link " property="url">Link text 1</a>
@@ -115,20 +115,23 @@
 		    </ul>
 </div>
 <div class="grid-column">
-        <p class="header header__column"></p>
+        <p class="heading heading__column">Spørgsmål? Skriv endelig :)</p>
         <div class="form-field ">
-            <label class="label" for=""></label>
-                <input class="input" type="" name="" id="" placeholder="" /> 
+            <label class="label" for="name">Navn</label>
+                <input class="input" type="" name="name" id="name" placeholder="Skriv dit navn" /> 
+        </div>
+        <div class="form-field ">
+            <label class="label" for="email">E-mail</label>
+        		<input class="input" type="" name="email" id="email" placeholder="Skriv din mail" /> 
+        </div>
+        <div class="form-field ">
+            <label class="label" for="message">Besked</label>
+        		<textarea class="textarea" name="message" id="message" placeholder="Skriv din besked"></textarea>
         </div>
         <div class="form-field ">
             <label class="label" for=""></label>
-        		<input class="input" type="" name="" id="" placeholder="" /> 
+        		<button class="button ">Send</button>
         </div>
-        <div class="form-field ">
-            <label class="label" for=""></label>
-        		<textarea class="textarea" name="" id="" placeholder=""></textarea>
-        </div>
-        <button class="button button--spacing-top"></button>
 </div>
 </div>
 

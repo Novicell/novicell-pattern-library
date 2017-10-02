@@ -1,9 +1,9 @@
-<article class="box{{ class }}">
+<article class="box">
 	{{#block "header"}}
 	{{/block}}
-	<div class="box{{ class }}__inner">
-		<div class="box{{ class }}__content">
-			{{> @header--column }}
+	<div class="box__inner">
+		<div class="box__content">
+			{{> @heading--column }}
 			{{#block "content"}}
 				<p>{{ box.content }}</p>
 			{{/block}}
