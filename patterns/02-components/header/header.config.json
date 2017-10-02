@@ -2,6 +2,14 @@
 	"title": "Site navigation",
 	"status": "prototype",
 	"context": {
+		"githubLink": {
+			"link": {
+				"url": "https://github.com/Novicell/novicell-pattern-library",
+				"text": "github.com/Novicell/novicell-pattern-library",
+				"target":"",
+				"title": "github.com/Novicell/novicell-pattern-library"
+			}
+		},
 		"nav-main-list": {
 			"link-list": [
 					{

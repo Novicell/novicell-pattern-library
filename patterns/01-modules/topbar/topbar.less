@@ -1,0 +1,41 @@
+/*
+ * Module: Topbar
+ */
+
+@topbar-background-color: @color-black;
+
+.topbar {
+    background-color: @topbar-background-color;
+
+    &__inner {
+        align-items: center;
+        display: flex;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    &__logo {
+        flex-basis: 30%;
+    }
+
+    &__navigation {
+        flex-basis: 70%;
+        align-content: flex-end;
+    }
+
+    &__navigation-primary {
+        align-items: center;
+        display: flex;
+    }
+
+    &__navigation-secondary {
+        color: @color-white;
+        text-align: right;
+    }
+
+    &__navigation-search {
+        margin-left: auto;
+        max-width: 200px;
+    }
+
+}

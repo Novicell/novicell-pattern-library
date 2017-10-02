@@ -45,6 +45,21 @@
 			}
 		},
 		{
+			"name": "search",
+			"context": {
+				"label": {
+					"text": "Search Label",
+					"input-id": "search-id"
+				},
+				"input": {
+					"type": "search",
+					"name": "search-input",
+					"id": "search-id",
+					"placeholder": "Search ..."
+				}
+			}
+		},
+		{
 			"name": "textarea",
 			"context": {
 				"label": {
