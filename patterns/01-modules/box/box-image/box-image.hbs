@@ -1,14 +1,10 @@
 <article class="box-image">
-	{{#block "header"}}
-	{{/block}}
-	<div class="box-image__inner">
+	<div class="box-image__inner" style="background-image: url({{ box-image.url }});">
 		<div class="box-image__content">
 			{{> @heading--column }}
 			{{#block "content"}}
-				<p>{{ box.content }}</p>
+				<p>{{ box-image.content }}</p>
 			{{/block}}
 		</div>
 	</div>
-	{{#block "footer"}}
-	{{/block}}
 </article>

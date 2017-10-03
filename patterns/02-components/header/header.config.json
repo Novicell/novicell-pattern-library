@@ -2,41 +2,5 @@
 	"title": "Site navigation",
 	"status": "prototype",
 	"context": {
-		"nav-main-list": {
-			"link-list": [
-					{
-						"link": {
-							"url": "#",
-							"text": "Link text 1",
-							"title": "Link title 1"
-						}
-					},
-					{
-						"link": {
-							"url": "#",
-							"text": "Link text 2",
-							"title": "Link title 2"
-						}
-					},
-					{
-						"link": {
-							"url": "#",
-							"text": "Link text 3",
-							"title": "Link title 3"
-						}
-					}
-				]
-		},
-		"links": {
-			"items": [{
-				"url": "url 1",
-				"text": "Link text 1",
-				"title": "Link title 1"
-			},{
-				"url": "url 2",
-				"text": "Link text 2",
-				"title": "Link title 2"
-			}]
-		}
 	}
 }

@@ -1,33 +1,35 @@
-{{#extend "@grid--three-columns"}}
-  {{#content "content"}}
-    {{#extend "@grid-column"}}
-      {{#content "grid-column-content"}}
-        {{> @heading--column columnHeader1}}
-        {{#extend '@rich-text-editor' }}
-          {{#content "rte-content"}} 
-            <p>Novicell Aarhus</p>
-            Søren Nymarks Vej 6<br>
-            8270 Højbjerg,<br>
-            Denmark<br>
-          {{/content}}
-        {{/extend}}
-        {{ render '@social-media-collection' }}
-      {{/content}}
-    {{/extend}}
-    {{#extend "@grid-column"}}
-      {{#content "grid-column-content"}}
-        {{> @heading--column columnHeader2}}
-		    {{> @link-list links }}
-      {{/content}}
-    {{/extend}}
-    {{#extend "@grid-column"}}
-      {{#content "grid-column-content"}}
-        {{> @heading--column columnHeader3}}
-        {{> @form-field input-name }}
-        {{> @form-field--email input-email }}
-        {{> @form-field--textarea input-textarea }}
-        {{> @form-field--button submitButton }}
-      {{/content}}
-    {{/extend}}
-  {{/content}}
-{{/extend}}
+<footer role="contentinfo" class="footer">
+  {{#extend "@grid--three-columns"}}
+    {{#content "content"}}
+      {{#extend "@grid-column"}}
+        {{#content "grid-column-content"}}
+          {{> @heading--column columnHeader1}}
+          {{#extend '@rich-text-editor' }}
+            {{#content "rte-content"}}
+              <p>Novicell Aarhus</p>
+              Søren Nymarks Vej 6<br>
+              8270 Højbjerg,<br>
+              Denmark<br>
+            {{/content}}
+          {{/extend}}
+          {{ render '@social-media-collection' }}
+        {{/content}}
+      {{/extend}}
+      {{#extend "@grid-column"}}
+        {{#content "grid-column-content"}}
+          {{> @heading--column columnHeader2}}
+          {{> @link-list links }}
+        {{/content}}
+      {{/extend}}
+      {{#extend "@grid-column"}}
+        {{#content "grid-column-content"}}
+          {{> @heading--column columnHeader3}}
+          {{> @form-field input-name }}
+          {{> @form-field--email input-email }}
+          {{> @form-field--textarea input-textarea }}
+          {{> @form-field--button submitButton }}
+        {{/content}}
+      {{/extend}}
+    {{/content}}
+  {{/extend}}
+</footer>

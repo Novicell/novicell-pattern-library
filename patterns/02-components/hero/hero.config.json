@@ -1,0 +1,9 @@
+{
+	"title": "Hero",
+	"status": "prototype",
+	"context": {
+		"button": {
+			"text": "Get started"
+		}
+	}
+}

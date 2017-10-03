@@ -1,0 +1,19 @@
+<div class="hero" style="background-image: url('/assets/images/hero--mona-eendra-313518.jpg')">
+  {{#extend "@grid--site-width"}}
+    {{#content "content"}}
+      {{#extend "@grid-column"}}
+        {{#content "grid-column-content"}}
+          <div class="hero__content">
+            <h1 class="hero__title">Hero Title</h1>
+            <div class="hero__info">
+              Hero Info
+            </div>
+            {{> @button }}
+          </div>
+        {{/content}}
+      {{/extend}}
+    {{/content}}
+  {{/extend}}
+</div>
+
+
