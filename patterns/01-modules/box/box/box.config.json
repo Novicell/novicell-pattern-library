@@ -10,7 +10,8 @@
             "alt": "Image"
         },
 		"box": {
-			"content": "Box content."
+			"content": "Box content.",
+			"url":  "/assets/images/greg-rakozy-129733.jpg"
 		},
 		"link": {
 			"url": "url",

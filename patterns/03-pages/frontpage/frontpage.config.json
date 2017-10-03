@@ -31,6 +31,7 @@
                 "text": "The basics"
             },
             "box-image": {
+                "url": "/assets/images/hero--mona-eendra-313518.jpg",
                 "content": "Get started using the pattern library."
             },
             "link": {
@@ -65,6 +66,19 @@
                 "title": "I have a question"
             }
         },
+        "text-box4": {
+            "heading": {
+                "text": "Got feedback or an issue?"
+            },
+            "text-box": {
+                "content": "Take a look at the Github repository to give feedback or submit an issue."
+            },
+            "link": {
+                "url": "https://github.com/Novicell/novicell-pattern-library",
+                "text": "Novicell Pattern Library",
+                "title": "Novicell Pattern Library"                
+            }
+        },        
         "box4": {
             "heading": {
                 "text": "Elements"
