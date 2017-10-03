@@ -7,7 +7,7 @@
         "text": "Elements"
       },
       "image": {
-        "url": "/assets/images/hero--mona-eendra-313518.jpg",
+        "url": "../../assets/images/hero--mona-eendra-313518.jpg",
         "alt": "Image"
       },
       "box": {
@@ -24,7 +24,7 @@
         "text": "Modules"
       },
       "image": {
-        "url": "/assets/images/hero--mona-eendra-313518.jpg",
+        "url": "../../assets/images/hero--mona-eendra-313518.jpg",
         "alt": "Image"
       },
       "box": {
@@ -41,7 +41,7 @@
         "text": "Components"
       },
       "image": {
-        "url": "/assets/images/hero--mona-eendra-313518.jpg",
+        "url": "../../assets/images/hero--mona-eendra-313518.jpg",
         "alt": "Image"
       },
       "box": {
