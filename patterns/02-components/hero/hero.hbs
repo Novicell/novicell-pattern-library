@@ -3,10 +3,13 @@
     {{#content "content"}}
       {{#extend "@grid-column"}}
         {{#content "grid-column-content"}}
-          <h1 class="hero__title">Hero Title</h1>
-          <div class="hero__info">
-            Hero Info
+          <div class="hero__content">
+            <h1 class="hero__title">Hero Title</h1>
+            <div class="hero__info">
+              Hero Info
+            </div>
           </div>
+          {{> @button }}
         {{/content}}
       {{/extend}}
     {{/content}}
