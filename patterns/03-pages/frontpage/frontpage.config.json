@@ -2,6 +2,30 @@
     "title": "Frontpage",
     "status": "prototype",
     "context": {
+        "text-box1": {
+            "heading": {
+                "text": "Atomic design"
+            },
+            "text-box": {
+                "content": "The Pattern Library is based on the Atomic Design method by Brad Frost."
+            }
+        },
+        "text-box2": {
+            "heading": {
+                "text": "Frontend Package"
+            },
+            "text-box": {
+                "content": "Build using our own tools and best practices for building websites."
+            }
+        },
+        "text-box3": {
+            "heading": {
+                "text": "Pattern Library tool"
+            },
+            "text-box": {
+                "content": "The Pattern Library is build using Clearlefts tool Fractal."
+            }
+        },
         "box1": {
             "header": {
                 "text": "Header1"
@@ -24,6 +48,19 @@
             },
             "box": {
                 "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
+            }
+        },
+        "text-box4": {
+            "heading": {
+                "text": "Got feedback or an issue?"
+            },
+            "text-box": {
+                "content": "Take a look at the Github repository to give feedback or submit an issue."
+            },
+            "link": {
+                "url": "https://github.com/Novicell/novicell-pattern-library",
+                "text": "Novicell Pattern Library",
+                "title": "Novicell Pattern Library"
             }
         }
     }
