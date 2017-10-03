@@ -2,72 +2,10 @@
 
 {{#extend '@main' }}
   {{#content 'main-content' }}
-    {{#extend "@grid--three-columns"}}
-      {{#content "content"}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @text-box--centered text-box1 }}
-          {{/content}}
-        {{/extend}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @text-box--centered text-box2 }}
-          {{/content}}
-        {{/extend}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @text-box--centered text-box3 }}
-          {{/content}}
-        {{/extend}}
-      {{/content}}
-    {{/extend}}
-    {{#extend "@grid--three-columns"}}
-      {{#content "content"}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @box-image box1 }}
-          {{/content}}
-        {{/extend}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @box-image box2 }}
-          {{/content}}
-        {{/extend}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @box-image box3 }}
-          {{/content}}
-        {{/extend}}
-      {{/content}}
-    {{/extend}}
-    {{#extend "@grid--site-width"}}
-      {{#content "content"}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @text-box--centered text-box4 }}
-          {{/content}}
-        {{/extend}}
-      {{/content}}
-    {{/extend}}
-    {{#extend "@grid--three-columns"}}
-      {{#content "content"}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @box box4 }}
-          {{/content}}
-        {{/extend}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @box box5 }}
-          {{/content}}
-        {{/extend}}
-        {{#extend "@grid-column"}}
-          {{#content "grid-column-content"}}
-            {{> @box box6 }}
-          {{/content}}
-        {{/extend}}
-      {{/content}}
-    {{/extend}}
+    {{ render '@about-boxes' }}
+    {{ render '@primary-boxes' }}
+    {{ render '@feedback-box' }}
+    {{ render '@secondary-boxes' }}
   {{/content}} 
 {{/extend}}
 
