@@ -4,11 +4,9 @@
       {{#extend "@grid-column"}}
         {{#content "grid-column-content"}}
           <div class="hero__content">
-            <h1 class="hero__title">Hero Title</h1>
-            <div class="hero__info">
-              Hero Info
-            </div>
-            {{> @button }}
+            {{> @heading--hero heading }}
+            {{> @paragraph--hero hero-text }}
+            {{> @button button }}
           </div>
         {{/content}}
       {{/extend}}

@@ -2,8 +2,20 @@
 	"title": "Hero",
 	"status": "prototype",
 	"context": {
+		"heading": {
+			"heading": {
+				"text": "Novicell Pattern Library"
+			}
+		},
+		"hero-text": {
+			"paragraph": {
+				"text": "This is Novicell’s collection of common patterns used in our solutions."
+			}
+		},
 		"button": {
-			"text": "Get started"
+			"button": {
+				"text": "Get started"
+			}
 		}
 	}
 }
