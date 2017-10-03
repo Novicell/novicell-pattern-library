@@ -4,40 +4,26 @@
 
 @hero-text-color: @color-white;
 @hero-background-color: @color-black;
-@hero-content-opacity: 25%;
+@hero-content-opacity: 70%;
 
 .hero {
     color: @hero-text-color;
-    display: flex;
     padding-bottom: 60px;
     padding-top: 60px;
     position: relative;
-    align-items: center;
+    background-size: cover; 
 
-    @media (@screen-md) {
+    @media (min-width: @screen-md-min) {
         height: 500px;
         padding: 230px 0;
     }
 
-    @media (@screen-lg) {
+    @media (min-width: @screen-lg-min) {
         height: 700px
     }
 
-    &__image {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        max-width: 100%;
-        right: 0;
-        top: 0;
-        z-index: 0;
-    }
 
-    &__container {
-        z-index: 99;
-    }
-
-    &__container:before {
+    &:before {
         background-color: fadeout(@hero-background-color, @hero-content-opacity);
         content: "";
         position: absolute;
@@ -47,17 +33,41 @@
         top: 0;
     }
 
+    // &__image {
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     max-width: 100%;
+    //     right: 0;
+    //     top: 0;
+    //     z-index: 0;
+    // }
+
+    // &__container {
+    //     z-index: 99;
+    // }
+
+    // &__container:before {
+    //     background-color: fadeout(@hero-background-color, @hero-content-opacity);
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    // }
+
     &__row {
         position: relative;
     }
 
-    &__title {
-        font-size: 48px;
-    }
+    // &__title {
+    //     font-size: 48px;
+    // }
 
-    &__info {
-        @media (@screen-sm) {
-            font-size: 21px;
-        }
-    }
+    // &__info {
+    //     @media (min-width: @screen-sm-min) {
+    //         font-size: 21px;
+    //     }
+    // }
 }

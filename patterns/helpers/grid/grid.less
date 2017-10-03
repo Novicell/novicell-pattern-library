@@ -2,18 +2,22 @@
  * Helpers: Grid
  */
 
-
 @grid-site-width: @site-width;
 @grid-site-padding: @site-padding;
 
 .grid {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    // margin: 0 auto;
     padding-left: @grid-site-padding;
     padding-right: @grid-site-padding;
+    // max-width: 2000px;
+    // width: 100%;
 
     &__inner {
         display: flex;
         flex-wrap: wrap;
+        flex-basis: 100%;
         margin-right: -calc(@site-padding / 2);
         margin-left: -calc(@site-padding / 2);
     }
