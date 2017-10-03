@@ -11,8 +11,7 @@
         },
 		"box": {
 			"content": "Box content.",
-			"url":  "/assets/images/greg-rakozy-129733.jpg",
-			"content": "Box Image content."			
+			"url":  "/assets/images/greg-rakozy-129733.jpg"
 		},
 		"link": {
 			"url": "url",
