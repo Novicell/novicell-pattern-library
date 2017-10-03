@@ -27,40 +27,94 @@
             }
         },
         "box1": {
-            "header": {
-                "text": "Header1"
+            "heading": {
+                "text": "The basics"
             },
-            "box": {
-                "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
+            "box-image": {
+                "content": "Get started using the pattern library."
+            },
+            "link": {
+                "url": "#",
+                "text": "Get started",
+                "title": "Get started"
             }
         },
         "box2": {
-            "header": {
-                "text": "Header2"
+            "heading": {
+                "text": "Useful stuff"
             },
-            "box": {
-                "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
+            "box-image": {
+                "content": "Links to useful articles et cetera."
+            },
+            "link": {
+                "url": "#",
+                "text": "Useful stuff",
+                "title": "Useful stuff"
             }
         },
         "box3": {
-            "header": {
-                "text": "Header3"
-            },
-            "box": {
-                "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
-            }
-        },
-        "text-box4": {
             "heading": {
-                "text": "Got feedback or an issue?"
+                "text": "Questions?"
             },
-            "text-box": {
-                "content": "Take a look at the Github repository to give feedback or submit an issue."
+            "box-image": {
+                "content": "If you have questions read this first."
             },
             "link": {
-                "url": "https://github.com/Novicell/novicell-pattern-library",
-                "text": "Novicell Pattern Library",
-                "title": "Novicell Pattern Library"
+                "url": "#",
+                "text": "I have a question",
+                "title": "I have a question"
+            }
+        },
+        "box4": {
+            "heading": {
+                "text": "Elements"
+            },
+            "image": {
+                "url": "/assets/images/hero--mona-eendra-313518.jpg",
+                "alt": "Image"
+            },
+            "box": {
+                "content": "Examples and a quick introduction to elements."
+            },
+            "link": {
+                "url": "#",
+                "text": "More about elements",
+                "title": "More about elements"
+            }
+        },
+        "box5": {
+            "heading": {
+                "text": "Modules"
+            },
+            "image": {
+                "url": "/assets/images/hero--mona-eendra-313518.jpg",
+                "alt": "Image"
+            },
+            "box": {
+                "content": "Examples and a quick introduction to modules."
+            },
+            "link": {
+                "url": "#",
+                "text": "More about modules",
+                "title": "More about modules"
+            }
+        },
+        "box6": {
+            "heading": {
+                "text": "Components"
+            },
+            "image": {
+                "url": "/assets/images/hero--mona-eendra-313518.jpg",
+                "alt": "Image"
+            },
+            "box": {
+                "content": "Examples and a quick introduction to components."
+            },
+            "link": {
+                "url": "#",
+                "text": "More about components",
+                "target":"",
+                "title": "More about components"
             }
         }
     }
