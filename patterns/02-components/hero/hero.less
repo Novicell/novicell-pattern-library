@@ -12,7 +12,7 @@
     padding-top: 60px;
     position: relative;
     background-size: cover; 
-
+    
     @media (min-width: @screen-md-min) {
         height: 500px;
         padding: 230px 0;
@@ -32,7 +32,10 @@
         right: 0;
         top: 0;
     }
-
+    
+    &__content {
+        position: relative;
+    }
     // &__image {
     //     position: absolute;
     //     bottom: 0;
@@ -57,17 +60,20 @@
     //     top: 0;
     // }
 
-    &__row {
-        position: relative;
+    // &__row {
+    //     position: relative;
+    // }
+
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
     }
 
-    // &__title {
-    //     font-size: 48px;
-    // }
-
-    // &__info {
-    //     @media (min-width: @screen-sm-min) {
-    //         font-size: 21px;
-    //     }
-    // }
+    &__info {
+        margin-bottom: 30px;
+        
+        @media (min-width: @screen-sm-min) {
+            font-size: 21px;
+        }
+    }
 }
