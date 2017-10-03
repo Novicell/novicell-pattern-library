@@ -1,0 +1,25 @@
+/*
+ * Module: Text Box
+ */
+
+@text-box-background-color: @color-white;
+@text-box-border-style: 1px solid @color-gray-light;
+@text-box-border-radius: 4px;
+@text-box-padding: 20px;
+@text-box-paragraph-spacing-top: 15px;
+
+.text-box,
+.text-box--centered {
+    &__inner {
+        padding: @text-box-padding;
+    }
+
+    p + p {
+        margin-top: @text-box-paragraph-spacing-top;
+    }
+}
+
+.text-box--centered {
+    text-align: center;
+}
+
