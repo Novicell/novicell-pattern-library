@@ -8,11 +8,18 @@
 	},
 	"variants": [
 		{
-			"type": "h1",
 			"name": "column",
 			"context": {
 				"heading": {
 					"text": "Column header"
+				}
+			}
+		},
+		{
+			"name": "hero",
+			"context": {
+				"heading": {
+					"text": "Hero header"
 				}
 			}
 		}
