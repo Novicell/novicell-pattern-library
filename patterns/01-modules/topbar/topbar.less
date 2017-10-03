@@ -5,6 +5,8 @@
 @topbar-background-color: @color-secondary;
 @topbar-border-color: @color-white;
 @topbar-border-opacity: 75%;
+@topbar-site-width: @site-width;
+
 
 .topbar {
     background-color: @topbar-background-color;
@@ -12,6 +14,9 @@
     &__inner {
         align-items: center;
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: @main-site-width;
     }
 
     &__logo {

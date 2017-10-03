@@ -1,18 +1,26 @@
+/*
+ * Helpers: Grid
+ */
+
+
+@grid-site-width: @site-width;
+@grid-site-padding: @site-padding;
+
 .grid {
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: @grid-site-padding;
+    padding-right: @grid-site-padding;
 
     @media (min-width: @screen-md-min) {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 0;
+        padding-right: 0;
     }
-    
+
     &__inner {
         display: flex;
         flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
+        margin-right: -calc(@site-padding / 2);
+        margin-left: -calc(@site-padding / 2);
     }
 
     &--full-width {
@@ -21,11 +29,9 @@
         padding-right: 0;
     }
 
-    &--site-width { max-width: 1560px; }
-    
-    &--two-columns {
-        max-width: 1500px;
+    &--site-width { max-width: @grid-site-width; }
 
+    &--two-columns {
         > .grid-column {
             width: 100%;
     
@@ -34,8 +40,6 @@
     }
 
     &--three-columns {
-        max-width: 1500px;
-
         > .grid-column {
             width: 100%;
         
@@ -44,8 +48,6 @@
     }
 
     &--two-third {
-        max-width: 1500px;
-        
         > .grid-column{
             width: 100%;
 
@@ -62,6 +64,6 @@
 
 .grid-column {
     flex-grow: 1;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: calc(@site-padding / 2);
+    margin-left: calc(@site-padding / 2);
 }
