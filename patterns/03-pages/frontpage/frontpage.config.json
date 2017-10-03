@@ -1,30 +1,30 @@
 {
-  "title": "Frontpage",
-  "status": "prototype",
-  "context": {
-    "box1": {
-      "header": {
-        "text": "Header1"
-      },
-      "box": {
-        "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
-      }
-    },
-    "box2": {
-      "header": {
-        "text": "Header2"
-      },
-      "box": {
-        "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
-      }
-    },
-    "box3": {
-      "header": {
-        "text": "Header3"
-      },
-      "box": {
-        "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
-      }
+    "title": "Frontpage",
+    "status": "prototype",
+    "context": {
+        "box1": {
+            "header": {
+                "text": "Header1"
+            },
+            "box": {
+                "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
+            }
+        },
+        "box2": {
+            "header": {
+                "text": "Header2"
+            },
+            "box": {
+                "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
+            }
+        },
+        "box3": {
+            "header": {
+                "text": "Header3"
+            },
+            "box": {
+                "content": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo."
+            }
+        }
     }
-  }
 }

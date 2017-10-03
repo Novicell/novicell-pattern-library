@@ -14,16 +14,24 @@
             "link-list": [
                 {
                     "link": {
+                        "active": "nav-main-list__item--active",
                         "url": "#",
-                        "text": "Link text 1",
-                        "title": "Link title 1"
+                        "text": "Home",
+                        "title": "Home"
                     }
                 },
                 {
                     "link": {
                         "url": "#",
-                        "text": "Link text 2",
-                        "title": "Link title 2"
+                        "text": "Get started",
+                        "title": "Get started"
+                    }
+                },
+                {
+                    "link": {
+                        "url": "#",
+                        "text": "About",
+                        "title": "About"
                     }
                 }
             ]
