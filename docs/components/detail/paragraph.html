@@ -157,7 +157,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-6818245aa120569e859b98d0dc34c7e5-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -165,7 +165,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-6818245aa120569e859b98d0dc34c7e5-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span></span><span class="hljs-template-variable">{{ text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ class }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></span><span class="hljs-template-variable">{{ paragraph.text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -205,7 +205,25 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-Less FileBrowser-code">
-                                <pre></pre>
+                                <pre><span class="hljs-comment">/*
+* Element: paragraphs
+*/</span>
+
+<span class="hljs-comment">//Setting document variables</span>
+<span class="hljs-variable">@hero-text-color:</span> <span class="hljs-variable">@color-white</span>;
+
+<span class="hljs-selector-class">.paragraph</span> {
+
+    <span class="hljs-selector-tag">&amp;</span><span class="hljs-selector-tag">--hero</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">@hero-text-color</span>;
+        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+
+        <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">@screen-sm-min</span>) {
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">21px</span>;
+        }
+    }
+}
+  </pre>
                             </code>
                             
                         </div>
@@ -221,7 +239,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">0 Byte</span>
+                    <span class="Meta-value">276 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -242,6 +260,21 @@
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="paragraph--default.html">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="paragraph--hero.html">
+                    <span>Hero</span>
+                </a>
+            
+            </span>
+        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
@@ -265,6 +298,17 @@
             <span class="Meta-value">patterns/00-elements/paragraph/paragraph.hbs</span>
         </li>
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="paragraph--hero.html">@<span>paragraph--hero</span></a>, 
+            
+                <a href="hero.html">@<span>hero</span></a>
+            
+            </span>
+        </li>
         
     </ul>
 </div>
@@ -803,6 +847,30 @@
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heading--hero.html" data-pjax>
+                <span>Hero</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -1190,10 +1258,21 @@
         
     
         
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-paragraph">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Paragraph</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="paragraph--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1210,6 +1289,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="paragraph--hero.html" data-pjax>
+                <span>Hero</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
