@@ -35,39 +35,14 @@
     
     &__content {
         position: relative;
+
+        @media (min-width: @screen-md-min) {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
-    // &__image {
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     max-width: 100%;
-    //     right: 0;
-    //     top: 0;
-    //     z-index: 0;
-    // }
-
-    // &__container {
-    //     z-index: 99;
-    // }
-
-    // &__container:before {
-    //     background-color: fadeout(@hero-background-color, @hero-content-opacity);
-    //     content: "";
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     right: 0;
-    //     top: 0;
-    // }
-
-    // &__row {
-    //     position: relative;
-    // }
-
-    &__title {
-        font-size: 48px;
-        line-height: 48px;
-    }
+   
 
     &__info {
         margin-bottom: 30px;

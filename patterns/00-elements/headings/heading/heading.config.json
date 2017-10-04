@@ -22,6 +22,14 @@
 					"text": "Hero header"
 				}
 			}
+		},
+		{
+			"name": "footer",
+			"context": {
+				"heading": {
+					"text": "Footer header"
+				}
+			}
 		}
 	]
 }

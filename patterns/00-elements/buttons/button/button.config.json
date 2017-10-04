@@ -14,6 +14,14 @@
           "text": "Ghost Button"
         }
       }
+    },
+    {
+      "name": "large",
+      "context": {
+        "button": {
+          "text": "Large Button"
+        }
+      }
     }
   ]
 }
