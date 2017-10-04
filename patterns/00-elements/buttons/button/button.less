@@ -4,8 +4,7 @@
 
 //Setting document variables
 @button-color-primary: @color-primary;
-@button-color-white: @color-white;
-@button-color-text: @color-text;
+@button-color-text: @color-white;
 
 @button-base-font-family: @base-font-family;
 
@@ -20,7 +19,7 @@
     font-family: @button-base-font-family;
     font-size: 14px;
     transition: background .3s, color .3s, border-color .3s;
-    color: @button-color-white;
+    color: @button-color-text;
     border: 1px solid transparent;
     text-decoration: none;
     border-radius: 4px;
@@ -30,7 +29,7 @@
 
     &:hover,
     &:focus {
-        color: @button-color-white;
+        color: @button-color-text;
         background: darken(@button-color-primary, 10%);
         outline: none;
     }
@@ -41,13 +40,13 @@
 
     // Ghost button
     &--ghost {
-        color: @button-color-text;
+        color: @button-color-primary;
         border: solid 1px @button-color-primary;
         background-color: transparent;
 
         &:hover,
         &:focus {
-            color: @button-color-white;
+            color: @button-color-text;
             background-color: @button-color-primary;
         }
     }
