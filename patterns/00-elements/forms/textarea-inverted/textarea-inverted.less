@@ -1,0 +1,31 @@
+/*
+* Element: Label
+*/
+
+//Setting document variables
+@input-inverted-text-color: @color-text;
+@input-inverted-background-color: @color-black;
+@input-inverted-border-color: @color-gray-dark;
+
+@input-inverted-font-family: @base-font-family;
+ 
+
+.textarea-inverted {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1;
+    font-family: @input-inverted-font-family;
+    color: @input-inverted-text-color;
+    background-color: @input-inverted-background-color;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid @input-inverted-border-color;
+    border-radius: 10px;
+    resize: none;
+
+    &:focus {
+        outline: none;
+    }
+}
