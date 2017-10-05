@@ -3,38 +3,35 @@
  */
 
 //Setting document variables
-@button-color-primary: @color-primary;
-@button-color-white: @color-white;
-@button-color-text: @color-text;
+@link-button-color-primary: @color-primary;
+@link-button-color-white: @color-white;
+@link-button-color-text: @color-text;
 
-@button-base-font-family: @base-font-family;
+@link-button-base-font-family: @base-font-family;
 
 
 // Default button
-.button {
+.link-button {
     display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
+    text-decoration: none;
     cursor: pointer;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    background-color: @button-color-primary;
-    white-space: nowrap;
-    user-select: none;
-    position: relative;
-    font-weight: 400;
-    font-family: @button-base-font-family;
+    background-color: @link-button-color-primary;
+    font-weight: 600;
+    font-family: @link-button-base-font-family;
     font-size: 14px;
-    transition: background .3s, color .3s, border-color .3s; 
-    padding: 10px 20px;
-    color: @button-color-white;
+    transition: background .3s, color .3s, border-color .3s;
+    color: @link-button-color-white;
     border: 1px solid transparent;
     text-decoration: none;
+    border-radius: 4px;
+    line-height: 40px;
+    padding: 0 20px;
 
     &:hover,
     &:focus {
-        color: @button-color-white;
-        background: darken(@button-color-primary, 10%);
+        color: @link-button-color-white;
+        background: darken(@link-button-color-primary, 10%);
         text-decoration: none;
         outline: none;
     }
@@ -45,14 +42,15 @@
 
     // Ghost button
     &--ghost {
-        color: @button-color-text;
-        border: solid 1px @button-color-primary;
+        color: @link-button-color-text;
+        border: solid 1px @link-button-color-primary;
         background-color: transparent;
 
         &:hover,
         &:focus {
-            color: @button-color-white;
-            background-color: @button-color-primary;
+            color: @link-button-color-white;
+            background-color: @link-button-color-primary;
         }
     }
 }
+ 
