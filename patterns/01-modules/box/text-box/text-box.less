@@ -10,10 +10,6 @@
 
 .text-box,
 .text-box--centered {
-    &__inner {
-        padding: @text-box-padding;
-    }
-
     p + p {
         margin-top: @text-box-paragraph-spacing-top;
     }
@@ -21,5 +17,9 @@
 
 .text-box--centered {
     text-align: center;
+
+    &__inner {
+        padding: @text-box-padding;
+    }
 }
 
