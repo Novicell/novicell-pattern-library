@@ -7,7 +7,7 @@
 
 
 .nav-main {
-    @media (max-width: @screen-md) {
+    @media (--viewport-md-min) {
         display: none;
     }
 }

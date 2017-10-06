@@ -11,9 +11,9 @@
         color: @hero-text-color;
         margin-bottom: 30px;
 
-        @media (min-width: @screen-sm-min) {
+        @media (--viewport-sm-min) {
             font-size: 21px;
         }
     }
 }
-  
+

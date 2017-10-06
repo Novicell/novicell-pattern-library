@@ -6,11 +6,11 @@ var path = require('path');
 
 module.exports = (function () {
     var projectPath = "./"; // path for the source files
-    var lessPath = projectPath + "/patterns/**/*.less"; // path for the source files
     var webPath = projectPath + ""; // path for the website - usually path to livereload views, and used for distPath
     var vendorPath = projectPath + "node_modules/"; // path for vendor scripts
     var distPath = webPath + "dist/"; // path for production files
     var cleanPaths = [distPath]; // files/folders to be removed with "clean"-task
+    var stylesPath = projectPath + "/patterns/**/*.css"; // path for the source files
 
     return {
         // ------------- Bundles -------------
@@ -19,20 +19,18 @@ module.exports = (function () {
                 name: 'vendor',
                 ignorePlugins: ['jscs', 'jshint', 'watch'], // add 'minify', to ignore minifaction on a bundle
                 scripts: [
-                    vendorPath + "svg4everybody/dist/svg4everybody.js",
-                    vendorPath + "jquery/dist/jquery.js"
+                    vendorPath + "svg4everybody/dist/svg4everybody.js"
                 ]
             },
             {
                 name: 'master',
                 scripts: [
-                    projectPath + "scripts/components/novicell.debounce.js",
-                    projectPath + "scripts/components/novicell.visible.js",
-                    projectPath + "scripts/components/novicell.embed.js",
-                    projectPath + "scripts/components/novicell.overlay.js",
+                    projectPath + "scripts/components/**/*.js",
                     projectPath + "scripts/master.js"
                 ],
-                styles: [ projectPath + "patterns/_base/master.less" ],
+                styles: [
+                    projectPath + "patterns/_base/master.css"
+                ],
                 images: [ projectPath + "images/**/*.{jpg,png,svg,gif}"],
                 html: [ projectPath + "html/*.html" ]
             },
@@ -57,15 +55,6 @@ module.exports = (function () {
 
         // ------------- Images -------------
         imagesDist: distPath + "images",
-        imagesOptimizationLevel: 5,
-        imagesProgressive: true,
-        imagesInterlaced: true,
-
-        // -------------- HTML --------------
-        htmlFileIncludeConfig: {
-            prefix: '@@',
-            basepath: '@file'
-        },
 
         // ------------- Livereload ---------
         livereloadPort: 35729,
@@ -85,7 +74,7 @@ module.exports = (function () {
             projectPath + 'scripts/**/*.js'
         ],
         watchStyles: [
-          lessPath
+            stylesPath
         ],
 
         // ------------- Deploy task --------

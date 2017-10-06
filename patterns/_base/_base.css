@@ -2,7 +2,7 @@
  * Base
  */
 
-// Box sizing
+/* Box sizing */
 * {
     box-sizing: border-box;
 
@@ -11,36 +11,37 @@
 }
 
 
-// Body
+/* Body */
 body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 16px;
+    background-color: var(--site-background-color);
+    font-family: var(--base-font-family);
+    font-weight: var(--base-font-weight);
+    font-size: var(--base-font-size);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: black;
+    color: var(--color-text);
     line-height: 1.5;
     overflow-x: hidden;
-    margin: 0;
     position: relative;
     width: 100%;
+    margin: 0;
+    padding: 0;
 
-    @media (min-width:@screen-lg) {font-size: 18px;}
+    @media (--lg-viewport) {font-size: 18px;}
 }
 
 
-// Links
+/* Links */
 a {
-    color: blue;
+    color: var(--color-link);
     text-decoration: underline;
 
     &:hover,
-    &:focus {color: darken(blue, 10%);}
+    &:focus { color: shade(var(--color-link), 10%); }
 }
 
 
-// Image handling
+/* Image handling */
 figure {
     margin: 0;
     background-size: auto 100%;
@@ -55,6 +56,6 @@ figure {
         margin: 0 auto;
         transition: opacity 0.2s;
     }
-	
-	&.contain-width img { width: auto; } 
+
+    &.contain-width img { width: auto; }
 }
