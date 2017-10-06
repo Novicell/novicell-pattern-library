@@ -2,10 +2,11 @@
 * Module: image text section
 */
 
-@image-text-section-padding: 40px;
-
+:root{
+	--image-text-section-padding: 40px;
+}
 
 .image-text-section {
-    padding: @image-text-section-padding; 
+    padding: var(--image-text-section-padding);
 }
- 
+

@@ -2,13 +2,15 @@
 * Element: paragraphs
 */
 
-//Setting document variables
-@hero-text-color: @color-white;
+/*Setting document variables*/
+:root{
+	--hero-text-color: --color-white;
+}
 
 .paragraph {
 
     &--hero {
-        color: @hero-text-color;
+        color: var(--hero-text-color);
         margin-bottom: 30px;
 
         @media (--viewport-sm-min) {

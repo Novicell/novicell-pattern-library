@@ -1,9 +1,10 @@
 /*
  * Module: Nav Main List
  */
-
-@nav-main-link-color: @color-white;
-@nav-main-link-color-active: @color-primary;
+:root{
+    --nav-main-link-color: --color-white;
+    --nav-main-link-color-active: --color-primary;
+}
 
 
 .nav-main {
@@ -23,15 +24,15 @@
     margin-right: 50px;
 
     a {
-        color: @nav-main-link-color;
+        color: var(--nav-main-link-color);
         text-decoration: none;
     }
 
     &:hover {
-        color: @nav-main-link-color;
+        color: var(--nav-main-link-color);
 
         a {
-            color: @nav-main-link-color;
+            color: var(--nav-main-link-color);
             text-decoration: underline;
         }
     }
@@ -42,6 +43,6 @@
 }
 
 a.nav-main-list__item--active {
-    color: @nav-main-link-color-active;
+    color: var(--nav-main-link-color-active);
     text-decoration: underline;
 }
