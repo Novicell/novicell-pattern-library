@@ -4,12 +4,12 @@
 
 /*Setting document variables*/
 :root{
-    --heading-color-primary: --color-primary;
-    --heading-color-secondary: --color-secondary;
-    --heading-color-black: --color-black;
-    --hero-text-color: --color-white;
-    --footer-text-color: --color-white;
-    --footer-border-color: --color-white;
+    --heading-color-primary: var(--color-primary);
+    --heading-color-secondary: var(--color-secondary);
+    --heading-color-black: var(--color-black);
+    --hero-text-color: var(--color-white);
+    --footer-text-color: var(--color-white);
+    --footer-border-color: var(--color-white);
     --footer-border-opacity: 75%;
 }
 
@@ -40,7 +40,7 @@
         color: var(--footer-text-color);
         line-height: 40px;
         margin-bottom: 20px;
-        border-bottom: 1px solid fadeout(var(--footer-border-color), var(--footer-border-opacity));
+        border-bottom: 1px solid color(var(--footer-border-color) alpha(var(--footer-border-opacity)));
     }
 }
 

@@ -3,7 +3,7 @@
  */
 
 :root{
-	--main-site-width: --site-width;
+	--main-site-width: var(--site-width);
 }
 
 .main {

@@ -2,8 +2,8 @@
  * Module: Nav Main List
  */
 :root{
-    --nav-main-link-color: --color-white;
-    --nav-main-link-color-active: --color-primary;
+    --nav-main-link-color: var(--color-white);
+    --nav-main-link-color-active: var(--color-primary);
 }
 
 

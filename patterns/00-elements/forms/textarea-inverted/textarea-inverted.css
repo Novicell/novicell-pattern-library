@@ -4,10 +4,10 @@
 
 /*Setting document variables*/
 :root{
-    --textarea-inverted-text-color: --color-white;
-    --textarea-inverted-background-color: --color-black;
-    --textarea-inverted-border-color: --color-gray-dark;
-    --textarea-inverted-font-family: --base-font-family;
+    --textarea-inverted-text-color: var(--color-white);
+    --textarea-inverted-background-color: var(--color-black);
+    --textarea-inverted-border-color: var(--color-gray-dark);
+    --textarea-inverted-font-family: var(--base-font-family);
 }
 
 

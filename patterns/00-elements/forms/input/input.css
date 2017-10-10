@@ -4,11 +4,11 @@
 
 /*Setting document variables*/
 :root{
-    --input-text-color: --color-text;
-    --input-background-color: --color-white;
-    --input-background-color-disabled: --color-gray;
-    --input-border-color: --color-gray-light;
-    --input-font-family: --base-font-family;
+    --input-text-color: var(--color-text);
+    --input-background-color: var(--color-white);
+    --input-background-color-disabled: var(--color-gray);
+    --input-border-color: var(--color-gray-light);
+    --input-font-family: var(--base-font-family);
 }
 
 

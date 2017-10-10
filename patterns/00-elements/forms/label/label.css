@@ -4,8 +4,8 @@
 
 /*Setting document variables*/
 :root{
-	--input-text-color: --color-text;
-	--input-font-family: --base-font-family;
+	--input-text-color: var(--color-text);
+	--input-font-family: var(--base-font-family);
 }
 
 .label {

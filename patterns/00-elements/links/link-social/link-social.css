@@ -4,11 +4,11 @@
 
 /*Setting document variables*/
 :root{
-    --social-background-color: --color-gray;
-    --icon-color: --color-white;
-    --facebook-background-color: --color-facebook;
-    --twitter-background-color: --color-twitter;
-    --google-plus-background-color: --color-google-plus;
+    --social-background-color: var(--color-gray);
+    --icon-color: var(--color-white);
+    --facebook-background-color: var(--color-facebook);
+    --twitter-background-color: var(--color-twitter);
+    --google-plus-background-color: var(--color-google-plus);
 }
 
 

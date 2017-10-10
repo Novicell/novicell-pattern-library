@@ -3,10 +3,10 @@
  */
 
 :root{
-    --topbar-background-color: --color-secondary;
-    --topbar-border-color: --color-white;
+    --topbar-background-color: var(--color-secondary);
+    --topbar-border-color: var(--color-white);
     --topbar-border-opacity: 75%;
-    --topbar-site-width: --site-width;
+    --topbar-site-width: var(--site-width);
 }
 
 
@@ -26,7 +26,7 @@
 
     &__navigation {
         align-content: flex-end;
-        border-right: 1px solid fadeout(var(--topbar-border-color), var(--topbar-border-opacity));
+        border-right: 1px solid color(var(--topbar-border-color) alpha(var(--topbar-border-opacity)));
         flex-basis: 70%;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -40,7 +40,7 @@
     }
 
     &__navigation-secondary {
-        border-bottom: 1px solid fadeout(var(--topbar-border-color), var(--topbar-border-opacity));
+        border-bottom: 1px solid color(var(--topbar-border-color) alpha(var(--topbar-border-opacity)));
         color: var(--color-white);
         padding-bottom: 20px;
         padding-right: 20px;

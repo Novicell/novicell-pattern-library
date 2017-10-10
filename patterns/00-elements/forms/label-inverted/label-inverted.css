@@ -4,8 +4,8 @@
 
 /*Setting document variables*/
 :root{
-	--label-text-color: --color-gray-light;
-	--label-font-family: --base-font-family;
+	--label-text-color: var(--color-gray-light);
+	--label-font-family: var(--base-font-family);
 }
 
 .label-inverted {

@@ -2,8 +2,8 @@
  * Component: Hero
  */
 :root{
-    --hero-text-color: --color-white;
-    --hero-background-color: --color-black;
+    --hero-text-color: var(--color-white);
+    --hero-background-color: var(--color-black);
     --hero-content-opacity: 70%;
 }
 
@@ -25,7 +25,7 @@
 
 
     &:before {
-        background-color: fadeout( var(--hero-background-color), var(--hero-content-opacity));
+        background-color: color(var(--hero-background-color) alpha(var(--hero-content-opacity)));
         content: "";
         position: absolute;
         bottom: 0;

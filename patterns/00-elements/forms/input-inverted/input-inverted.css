@@ -4,11 +4,11 @@
 
 /*Setting document variables*/
 :root{
-    --input-inverted-text-color: --color-white;
-    --input-inverted-background-color: --color-black;
-    --input-inverted-background-color-disabled: --color-gray;
-    --input-inverted-border-color: --color-gray-dark;
-    --input-inverted-font-family: --base-font-family;
+    --input-inverted-text-color: var(--color-white);
+    --input-inverted-background-color: var(--color-black);
+    --input-inverted-background-color-disabled: var(--color-gray);
+    --input-inverted-border-color: var(--color-gray-dark);
+    --input-inverted-font-family: var(--base-font-family);
 }
 
 

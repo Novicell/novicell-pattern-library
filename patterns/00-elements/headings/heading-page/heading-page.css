@@ -4,8 +4,8 @@
 
 /*Setting document variables*/
 :root{
-	--heading-color-primary: --color-text;
-	--heading-color-secondary: --color-secondary;
+	--heading-color-primary: var(--color-text);
+	--heading-color-secondary: var(--color-secondary);
 }
 
 .heading-page {
