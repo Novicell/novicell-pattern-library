@@ -1,43 +1,50 @@
-{{#extend "@grid--full-width"}}
-  {{#content "content"}}
-    {{#extend "@grid-column"}}
-      {{#content "grid-column-content"}}
-        {{> @logo }}
-      {{/content}}
-    {{/extend}}
-    {{#extend "@grid-column"}}
-      {{#content "grid-column-content"}}
-        {{> @button button }}
+{{ render '@header' }}
+
+{{#extend '@main' }}
+  {{#content 'main-content' }}
+    {{#extend '@grid-container--site-width'}}
+      {{#content 'grid-container-content'}}
+        {{#extend '@grid-row'}}
+          {{#content 'grid-row-content'}}
+            {{#embed '@grid-column'}}
+              {{#content 'grid-column-content'}}
+                {{> @heading-page page-heading }}
+                {{> @text-box text-box }}
+              {{/content}}
+            {{/embed}}
+          {{/content}}
+        {{/extend}}
+        {{#extend '@grid-row'}}
+          {{#content 'grid-row-content'}}
+            {{#embed '@grid-row--two-columns'}}
+              {{#content 'content'}}
+                {{#embed '@grid-column'}}
+                  {{#content 'grid-column-content'}}
+                    {{ render '@image-text-section'}}
+                  {{/content}}
+                {{/embed}}
+                {{#embed '@grid-column'}}
+                  {{#content 'grid-column-content'}}
+                    {{ render '@image-text-section'}}
+                  {{/content}}
+                {{/embed}}
+              {{/content}}
+            {{/embed}}
+          {{/content}}
+        {{/extend}}
+        {{#extend '@grid-row'}}
+          {{#content 'grid-row-content'}}
+          {{#extend '@grid-column'}}
+            {{#content 'grid-column-content'}}
+              {{ render '@image-text-section'}}
+              {{ render '@text-image-section'}}
+            {{/content}}
+          {{/extend}}
+          {{/content}}
+        {{/extend}}
       {{/content}}
     {{/extend}}
   {{/content}}
 {{/extend}}
-
-{{#extend "@grid--two-columns"}}
-  {{#content "content"}}
-    {{#extend "@grid-column"}}
-      {{#content "grid-column-content"}}
-        {{> @button--ghost buttonGhost }}
-      {{/content}}
-    {{/extend}}
-    {{#extend "@grid-column"}}
-      {{#content "grid-column-content"}}
-        {{> @link-button linkButton}}
-      {{/content}}
-    {{/extend}}
-  {{/content}}
-{{/extend}}
-
-
-
-
-
-
-{{> @heading-page headerPage}}
-{{> @heading testHeader}}
-{{> @heading--column columnHeader}}
-{{> @input--text inputText}}
-{{> @social-media-collection }}
-{{> @form-field--password password }}
 
 {{ render '@footer' }}
