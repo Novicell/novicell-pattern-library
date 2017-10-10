@@ -197,49 +197,50 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-3a158ac8452077a981571be9fe185f09">textarea.less</option>
+                <option value="file-c7a7b0da81ef30aff3e0a3da42ef13ef">textarea.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-3a158ac8452077a981571be9fe185f09" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-c7a7b0da81ef30aff3e0a3da42ef13ef" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
                     <span class="Meta-value">
                         <div class="FileBrowser-itemPreview">
                             
-                            <code class="Code Code--lang-Less FileBrowser-code">
-                                <pre><span class="hljs-comment">/*
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre>/*
 * Element: Label
-*/</span>
+*/
 
-<span class="hljs-comment">//Setting document variables</span>
-<span class="hljs-variable">@input-text-color:</span> <span class="hljs-variable">@color-text</span>;
-<span class="hljs-variable">@input-background-color:</span> <span class="hljs-variable">@color-white</span>;
-<span class="hljs-variable">@input-border-color:</span> <span class="hljs-variable">@color-gray-light</span>;
+/*Setting document variables*/
+:root{
+    --input-text-color: var(--color-text);
+    --input-background-color: var(--color-white);
+    --input-border-color: var(--color-gray-light);
+    --input-font-family: var(--base-font-family);
+}
 
-<span class="hljs-variable">@input-font-family:</span> <span class="hljs-variable">@base-font-family</span>;
 
+.textarea {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1;
+    font-family: var(--input-font-family);
+    color: var(--input-text-color);
+    background-color: var(--input-background-color);
+    background-image: none; /* Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214*/
+    border: 1px solid var(--input-border-color);
+    border-radius: 10px;
+    resize: none;
 
-<span class="hljs-selector-class">.textarea</span> {
-    <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">min-height</span>: <span class="hljs-number">100px</span>;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
-    <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">@input-font-family</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">@input-text-color</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">@input-background-color</span>;
-    <span class="hljs-attribute">background-image</span>: none; <span class="hljs-comment">// Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214</span>
-    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">@input-border-color</span>;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">resize</span>: none;
-
-    <span class="hljs-selector-tag">&amp;</span><span class="hljs-selector-pseudo">:focus</span> {
-        <span class="hljs-attribute">outline</span>: none;
+    &amp;:focus {
+        outline: none;
     }
 }
 </pre>
@@ -250,15 +251,15 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/textarea/textarea.less"><span>/components/raw/textarea/textarea.less</span></a></span>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/textarea/textarea.css"><span>/components/raw/textarea/textarea.css</span></a></span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">patterns/00-elements/forms/textarea/textarea.less</span>
+                    <span class="Meta-value">patterns\00-elements\forms\textarea\textarea.css</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">719 Bytes</span>
+                    <span class="Meta-value">831 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -299,7 +300,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">patterns/00-elements/forms/textarea/textarea.hbs</span>
+            <span class="Meta-value">patterns\00-elements\forms\textarea\textarea.hbs</span>
         </li>
         
         
@@ -2259,6 +2260,70 @@
         </li>
         
     
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-section">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Section</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image-text-section.html" data-pjax>
+                <span>Image Text Section</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="text-image-section.html" data-pjax>
+                <span>Text Image Section</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -2353,7 +2418,42 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--default.html" data-pjax>
+            <a class="Tree-entityLink" href="grid-column.html" data-pjax>
+                <span>Grid Column</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-grid-container">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Grid Container</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid-container--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -2377,7 +2477,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--full-width.html" data-pjax>
+            <a class="Tree-entityLink" href="grid-container--full-width.html" data-pjax>
                 <span>Full Width</span>
                 
 
@@ -2401,56 +2501,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--site-width.html" data-pjax>
+            <a class="Tree-entityLink" href="grid-container--site-width.html" data-pjax>
                 <span>Site Width</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--two-columns.html" data-pjax>
-                <span>Two Columns</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--three-columns.html" data-pjax>
-                <span>Three Columns</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2476,10 +2528,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-grid-row">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Grid Row</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid-column.html" data-pjax>
-                <span>Grid Column</span>
+            <a class="Tree-entityLink" href="grid-row--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2487,7 +2550,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
 
 
 </div>
@@ -2496,6 +2559,64 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid-row--three-columns.html" data-pjax>
+                <span>Three Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid-row--two-columns.html" data-pjax>
+                <span>Two Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

@@ -2,8 +2,9 @@
  * Helpers: Main
  */
 
-
-@main-site-width: @site-width;
+:root{
+	--main-site-width: var(--site-width);
+}
 
 .main {
     margin-bottom: 50px;

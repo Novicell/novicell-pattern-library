@@ -1,30 +1,31 @@
 /**
  * Component: Hero
  */
-
-@hero-text-color: @color-white;
-@hero-background-color: @color-black;
-@hero-content-opacity: 70%;
+:root{
+    --hero-text-color: var(--color-white);
+    --hero-background-color: var(--color-black);
+    --hero-content-opacity: 70%;
+}
 
 .hero {
-    color: @hero-text-color;
+    color: var(--hero-text-color);
     padding-bottom: 60px;
     padding-top: 60px;
     position: relative;
-    background-size: cover; 
-    
-    @media (min-width: @screen-md-min) {
+    background-size: cover;
+
+    @media (--viewport-md-min) {
         height: 500px;
         padding: 230px 0;
     }
 
-    @media (min-width: @screen-lg-min) {
+    @media (--viewport-lg-min) {
         height: 700px
     }
 
 
     &:before {
-        background-color: fadeout(@hero-background-color, @hero-content-opacity);
+        background-color: color(var(--hero-background-color) alpha(var(--hero-content-opacity)));
         content: "";
         position: absolute;
         bottom: 0;
@@ -32,22 +33,22 @@
         right: 0;
         top: 0;
     }
-    
+
     &__content {
         position: relative;
 
-        @media (min-width: @screen-md-min) {
+        @media (--viewport-md-min) {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
         }
     }
-   
+
 
     &__info {
         margin-bottom: 30px;
-        
-        @media (min-width: @screen-sm-min) {
+
+        @media (--viewport-sm-min) {
             font-size: 21px;
         }
     }

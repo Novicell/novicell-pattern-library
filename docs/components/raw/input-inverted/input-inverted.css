@@ -2,13 +2,14 @@
 * Element: Input fields
 */
 
-//Setting document variables
-@input-inverted-text-color: @color-white;
-@input-inverted-background-color: @color-black;
-@input-inverted-background-color-disabled: @color-gray;
-@input-inverted-border-color: @color-gray-dark;
-
-@input-inverted-font-family: @base-font-family;
+/*Setting document variables*/
+:root{
+    --input-inverted-text-color: var(--color-white);
+    --input-inverted-background-color: var(--color-black);
+    --input-inverted-background-color-disabled: var(--color-gray);
+    --input-inverted-border-color: var(--color-gray-dark);
+    --input-inverted-font-family: var(--base-font-family);
+}
 
 
 .input-inverted {
@@ -18,12 +19,12 @@
     padding: 0 20px;
     font-size: 16px;
     line-height: 1;
-    font-family: @input-inverted-font-family;
-    color: @input-inverted-text-color;
-    background-color: @input-inverted-background-color;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    border: 1px solid @input-inverted-border-color;
+    font-family: var(--input-inverted-font-family);
+    color: var(--input-inverted-text-color);
+    background-color: var(--input-inverted-background-color);
+    background-image: none; /* Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214*/
+    border: 1px solid var(--input-inverted-border-color);
     border-radius: 10px;
 
-    &:focus {outline: 0;} 
+    &:focus {outline: 0;}
 }

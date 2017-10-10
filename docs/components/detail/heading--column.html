@@ -195,64 +195,67 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-a3726d1e6b923c20bbab1481897d0c1f">heading.less</option>
+                <option value="file-37221f172d02697af65521acda13e98c">heading.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-a3726d1e6b923c20bbab1481897d0c1f" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-37221f172d02697af65521acda13e98c" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
                     <span class="Meta-value">
                         <div class="FileBrowser-itemPreview">
                             
-                            <code class="Code Code--lang-Less FileBrowser-code">
-                                <pre><span class="hljs-comment">/*
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre>/*
 * Element: Headers
-*/</span>
+*/
 
-<span class="hljs-comment">//Setting document variables</span>
-<span class="hljs-variable">@heading-color-primary:</span> <span class="hljs-variable">@color-primary</span>;
-<span class="hljs-variable">@heading-color-secondary:</span> <span class="hljs-variable">@color-secondary</span>;
-<span class="hljs-variable">@heading-color-black:</span> <span class="hljs-variable">@color-black</span>;
-<span class="hljs-variable">@hero-text-color:</span> <span class="hljs-variable">@color-white</span>;
-<span class="hljs-variable">@footer-text-color:</span> <span class="hljs-variable">@color-white</span>;
-<span class="hljs-variable">@footer-border-color:</span> <span class="hljs-variable">@color-white</span>;
-<span class="hljs-variable">@footer-border-opacity:</span> <span class="hljs-number">75%</span>;
+/*Setting document variables*/
+:root{
+    --heading-color-primary: var(--color-primary);
+    --heading-color-secondary: var(--color-secondary);
+    --heading-color-black: var(--color-black);
+    --hero-text-color: var(--color-white);
+    --footer-text-color: var(--color-white);
+    --footer-border-color: var(--color-white);
+    --footer-border-opacity: 75%;
+}
 
-<span class="hljs-selector-class">.heading</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">@heading-color-primary</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">22px</span>;
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
-    <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">@heading-font-family</span>;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+.heading {
+    color: var(--heading-color-primary);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--heading-font-family);
+    margin-bottom: 0;
+    margin-top: 0;
 
-    <span class="hljs-selector-tag">&amp;</span><span class="hljs-selector-tag">__column</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">@heading-color-black</span>;
+    &amp;__column {
+        color: var(--heading-color-black);
     }
 
-    <span class="hljs-selector-tag">&amp;</span><span class="hljs-selector-tag">__hero</span> {
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
-        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">34px</span>;
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">@hero-text-color</span>;
+    &amp;__hero {
+        font-size: 30px;
+        line-height: 34px;
+        color: var(--hero-text-color);
 
-        <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">@screen-sm-min</span>) {
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">48px</span>;
-            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">72px</span>;        
+        @media (--viewport-sm-min) {
+            font-size: 48px;
+            line-height: 72px;
         }
     }
 
-    <span class="hljs-selector-tag">&amp;</span><span class="hljs-selector-tag">__footer</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">@footer-text-color</span>;
-        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
-        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
-        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid fadeout(<span class="hljs-variable">@footer-border-color</span>, <span class="hljs-variable">@footer-border-opacity</span>);
+    &amp;__footer {
+        color: var(--footer-text-color);
+        line-height: 40px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid color(var(--footer-border-color) alpha(var(--footer-border-opacity)));
     }
 }
- </pre>
+
+</pre>
                             </code>
                             
                         </div>
@@ -260,15 +263,15 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/heading/heading.less"><span>/components/raw/heading/heading.less</span></a></span>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/heading/heading.css"><span>/components/raw/heading/heading.css</span></a></span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">patterns/00-elements/headings/heading/heading.less</span>
+                    <span class="Meta-value">patterns\00-elements\headings\heading\heading.css</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">971 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -332,7 +335,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">patterns/00-elements/headings/heading/heading--column.hbs</span>
+            <span class="Meta-value">patterns\00-elements\headings\heading\heading--column.hbs</span>
         </li>
         
         <li class="Meta-item">
@@ -346,16 +349,14 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(3)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="box.html">@<span>box</span></a>, 
             
                 <a href="box-image.html">@<span>box-image</span></a>, 
             
-                <a href="text-box.html">@<span>text-box</span></a>, 
-            
-                <a href="page.html">@<span>page</span></a>
+                <a href="text-box.html">@<span>text-box</span></a>
             
             </span>
         </li>
@@ -2307,6 +2308,70 @@
         </li>
         
     
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-section">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Section</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image-text-section.html" data-pjax>
+                <span>Image Text Section</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="text-image-section.html" data-pjax>
+                <span>Text Image Section</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -2401,7 +2466,42 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--default.html" data-pjax>
+            <a class="Tree-entityLink" href="grid-column.html" data-pjax>
+                <span>Grid Column</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-grid-container">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Grid Container</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid-container--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -2425,7 +2525,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--full-width.html" data-pjax>
+            <a class="Tree-entityLink" href="grid-container--full-width.html" data-pjax>
                 <span>Full Width</span>
                 
 
@@ -2449,56 +2549,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--site-width.html" data-pjax>
+            <a class="Tree-entityLink" href="grid-container--site-width.html" data-pjax>
                 <span>Site Width</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--two-columns.html" data-pjax>
-                <span>Two Columns</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid--three-columns.html" data-pjax>
-                <span>Three Columns</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2524,10 +2576,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-grid-row">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Grid Row</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="grid-column.html" data-pjax>
-                <span>Grid Column</span>
+            <a class="Tree-entityLink" href="grid-row--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2535,7 +2598,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
 
 
 </div>
@@ -2544,6 +2607,64 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid-row--three-columns.html" data-pjax>
+                <span>Three Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grid-row--two-columns.html" data-pjax>
+                <span>Two Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

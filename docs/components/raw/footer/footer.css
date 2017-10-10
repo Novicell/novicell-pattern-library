@@ -1,12 +1,12 @@
 /*
  * Component: Footer
  */
-
-@footer-background-color: @color-secondary;
-
+:root{
+	--footer-background-color: var(--color-secondary);
+}
 .footer {
-    background-color: @footer-background-color;
-    color: @color-white;
+    background-color: var(--footer-background-color);
+    color: var(--color-white);
     padding-top: 30px;
     padding-bottom: 30px;
 }

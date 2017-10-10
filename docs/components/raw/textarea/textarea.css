@@ -2,12 +2,13 @@
 * Element: Label
 */
 
-//Setting document variables
-@input-text-color: @color-text;
-@input-background-color: @color-white;
-@input-border-color: @color-gray-light;
-
-@input-font-family: @base-font-family;
+/*Setting document variables*/
+:root{
+    --input-text-color: var(--color-text);
+    --input-background-color: var(--color-white);
+    --input-border-color: var(--color-gray-light);
+    --input-font-family: var(--base-font-family);
+}
 
 
 .textarea {
@@ -17,11 +18,11 @@
     padding: 10px;
     font-size: 16px;
     line-height: 1;
-    font-family: @input-font-family;
-    color: @input-text-color;
-    background-color: @input-background-color;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    border: 1px solid @input-border-color;
+    font-family: var(--input-font-family);
+    color: var(--input-text-color);
+    background-color: var(--input-background-color);
+    background-image: none; /* Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214*/
+    border: 1px solid var(--input-border-color);
     border-radius: 10px;
     resize: none;
 
