@@ -60,7 +60,8 @@ module.exports = (function () {
         livereloadPort: 35729,
         livereloadPaths: [
             distPath + "**/*.*",
-            webPath + "Views/**/*.cshtml",
+            webPath + "Views/**/*.cshtml", // Umbraco, Sitecore
+            webPath + "Files/Templates/Designs/**/*.cshtml", // Dynamicweb
             webPath + "html/**/*.html",
             webPath + "**/*.php"
         ],

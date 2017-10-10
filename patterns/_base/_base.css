@@ -1,6 +1,9 @@
 /**
  * Base
  */
+ :root{
+    --site-background-color: var(--site-background-color, #000)
+ }
 
 /* Box sizing */
 * {
