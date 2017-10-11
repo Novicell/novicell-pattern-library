@@ -1,10 +1,10 @@
 /*
  * Helpers: Grid
  */
-:root{
---grid-container-site-width: var(--site-width);
---grid-container-site-padding: var(--site-padding);
 
+:root{
+    --grid-container-site-width: var(--site-width);
+    --grid-container-site-padding: var(--site-padding);
 }
 
 .grid-container {
