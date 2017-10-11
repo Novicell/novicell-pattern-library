@@ -197,25 +197,63 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-d18e0e0c05691b46cd46c926109f5bb8">grid-row.json</option>
+                <option value="file-f8bb2f15dba9d48b6cdcffe5bf052dae">grid-row.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-d18e0e0c05691b46cd46c926109f5bb8" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-f8bb2f15dba9d48b6cdcffe5bf052dae" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
                     <span class="Meta-value">
                         <div class="FileBrowser-itemPreview">
                             
-                            <code class="Code Code--lang-JSON FileBrowser-code">
-                                <pre>{
-	<span class="hljs-attr">"title"</span>: <span class="hljs-string">"Grid Row"</span>,
-	<span class="hljs-attr">"status"</span>: <span class="hljs-string">"prototype"</span>,
-	<span class="hljs-attr">"context"</span>: {
-	}
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre>/*
+ * Helpers: Grid Row
+ */
+
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+    &amp; + .grid-row {
+        margin-top: var(--grid-container-site-padding);
+    }
+
+    &amp;--two-columns {
+        &gt; .grid-column {
+            width: 100%;
+
+            @media (--viewport-md-min) { width: calc(50% - 30px); }
+        }
+    }
+
+    &amp;--three-columns {
+        &gt; .grid-column {
+            width: 100%;
+
+            @media (--viewport-md-min) { width: calc(33.33% - 30px); }
+        }
+    }
+
+    &amp;--two-third {
+        &gt; .grid-column{
+            width: 100%;
+
+            @media (--viewport-md-min) { width: calc(66.66% - 30px); }
+
+            &amp;:last-child {
+                width: 100%;
+
+                @media (--viewport-md-min) { width: calc(33.33% - 30px); }
+            }
+        }
+    }
 }
 </pre>
                             </code>
@@ -225,15 +263,15 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/grid-row/grid-row.json"><span>/components/raw/grid-row/grid-row.json</span></a></span>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/grid-row/grid-row.css"><span>/components/raw/grid-row/grid-row.css</span></a></span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">patterns/helpers/grid/grid-row/grid-row.json</span>
+                    <span class="Meta-value">patterns/helpers/grid/grid-row/grid-row.css</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">67 Bytes</span>
+                    <span class="Meta-value">812 Bytes</span>
                 </li>
             </ul>
         </div>
