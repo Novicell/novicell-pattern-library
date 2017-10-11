@@ -1,5 +1,4 @@
 .idea
 node_modules
 novicell-frontend
-dist/*
-!dist/placeholder-images/
+dist/
