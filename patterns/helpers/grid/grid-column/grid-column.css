@@ -6,7 +6,4 @@
     flex-grow: 1;
     margin-right: calc( var(--site-padding) / 2);
     margin-left: calc( var(--site-padding) / 2);
-    margin-bottom: var(--site-padding);
-
-    @media (--viewport-md-min) { margin-bottom: 0; }
 }
