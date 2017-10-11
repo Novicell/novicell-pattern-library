@@ -157,7 +157,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-cbf1506d09840a435b5b128b9f19c58b-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-text-section"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #acacac;"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-text-section"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid-row grid-row--two-columns"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid-column"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../images/placeholder-images/hero--mona-eendra-313518.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Image"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image"</span>&gt;</span>
@@ -183,7 +183,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-cbf1506d09840a435b5b128b9f19c58b-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-text-section"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-color: #acacac;"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"image-text-section"</span>&gt;</span>
     </span><span class="hljs-template-tag">{{#<span class="hljs-name">extend</span> <span class="hljs-string">"<a href="grid-row--two-columns.html">@grid-row--two-columns</a>"</span>}}</span><span class="xml">
     </span><span class="hljs-template-tag">{{#<span class="hljs-name">content</span> <span class="hljs-string">"content"</span>}}</span><span class="xml">
         </span><span class="hljs-template-tag">{{#<span class="hljs-name">extend</span> <span class="hljs-string">"<a href="grid-column.html">@grid-column</a>"</span>}}</span><span class="xml">
@@ -265,9 +265,11 @@
 
 <span class="hljs-selector-pseudo">:root</span>{
 	<span class="hljs-attribute">--image-text-section-padding</span>: <span class="hljs-number">40px</span>;
+	<span class="hljs-attribute">--image-text-background-color</span>: <span class="hljs-built_in">var</span>(--color-gray-light);
 }
 
 <span class="hljs-selector-class">.image-text-section</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--image-text-background-color);
     <span class="hljs-attribute">padding</span>: <span class="hljs-built_in">var</span>(--image-text-section-padding);
 }
 
@@ -287,7 +289,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">156 Bytes</span>
+                    <span class="Meta-value">271 Bytes</span>
                 </li>
             </ul>
         </div>
