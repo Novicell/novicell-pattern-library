@@ -14,34 +14,38 @@
             {{/embed}}
           {{/content}}
         {{/extend}}
-        {{#extend '@grid-row'}}
+        {{#embed '@grid-row--two-columns'}}
           {{#content 'grid-row-content'}}
-            {{#embed '@grid-row--two-columns'}}
-              {{#content 'content'}}
-                {{#embed '@grid-column'}}
-                  {{#content 'grid-column-content'}}
+            {{#embed '@grid-column'}}
+              {{#content 'grid-column-content'}}
+                {{ render '@image-text-section'}}
+              {{/content}}
+            {{/embed}}
+            {{#embed '@grid-column'}}
+              {{#content 'grid-column-content'}}
+                {{ render '@image-text-section'}}
+              {{/content}}
+            {{/embed}}
+          {{/content}}
+        {{/embed}}
+        {{#embed '@grid-row'}}
+          {{#content 'grid-row-content'}}
+            {{#embed '@grid-column'}}
+              {{#content 'grid-column-content'}}
+                {{#embed '@grid-row'}}
+                  {{#content 'grid-row-content'}}
                     {{ render '@image-text-section'}}
                   {{/content}}
                 {{/embed}}
-                {{#embed '@grid-column'}}
-                  {{#content 'grid-column-content'}}
-                    {{ render '@image-text-section'}}
+                {{#embed '@grid-row'}}
+                  {{#content 'grid-row-content'}}
+                    {{ render '@text-image-section'}}
                   {{/content}}
                 {{/embed}}
               {{/content}}
             {{/embed}}
           {{/content}}
-        {{/extend}}
-        {{#extend '@grid-row'}}
-          {{#content 'grid-row-content'}}
-          {{#extend '@grid-column'}}
-            {{#content 'grid-column-content'}}
-              {{ render '@image-text-section'}}
-              {{ render '@text-image-section'}}
-            {{/content}}
-          {{/extend}}
-          {{/content}}
-        {{/extend}}
+        {{/embed}}
       {{/content}}
     {{/extend}}
   {{/content}}
