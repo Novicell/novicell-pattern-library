@@ -6,6 +6,7 @@ var path = require('path');
 
 module.exports = (function () {
     var projectPath = "./"; // path for the source files
+    var assetPath = projectPath + "assets/";
     var webPath = projectPath + ""; // path for the website - usually path to livereload views, and used for distPath
     var vendorPath = projectPath + "node_modules/"; // path for vendor scripts
     var distPath = webPath + "dist/"; // path for production files
@@ -31,12 +32,12 @@ module.exports = (function () {
                 styles: [
                     projectPath + "patterns/_base/master.css"
                 ],
-                images: [ projectPath + "images/**/*.{jpg,png,svg,gif}"],
+                images: [ assetPath + "images/**/*.{jpg,png,svg,gif}"],
                 html: [ projectPath + "html/*.html" ]
             },
             {
                 name: "icons",
-                icons: [ projectPath + "icons/**/*.svg" ]
+                icons: [ assetPath + "icons/**/*.svg" ]
             }
         ],
 
@@ -67,9 +68,9 @@ module.exports = (function () {
         ],
 
         // ------------- Watch -------------
-        watchImages: [ projectPath + 'images/**/*' ],
-        watchIcons: [ projectPath + 'icons/*' ],
-        watchFonts: [ projectPath + 'fonts/*' ],
+        watchImages: [ assetPath + 'images/**/*' ],
+        watchIcons: [ assetPath + 'icons/*' ],
+        watchFonts: [ assetPath + 'fonts/*' ],
         watchHtml: [ projectPath + 'html/**/*' ],
         watchScripts: [
             projectPath + 'scripts/**/*.js'
@@ -87,7 +88,7 @@ module.exports = (function () {
 
         // ------------- Copy on build --------
         buildCopy: [{
-            from: projectPath + "fonts/**/*",
+            from: assetPath + "fonts/**/*",
             to: distPath  + "fonts"
         }],
 

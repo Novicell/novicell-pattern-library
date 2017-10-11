@@ -2,7 +2,7 @@
  * Base
  */
  :root{
-    --site-background-color: var(--site-background-color, #000)
+    --site-background-color: var(--site-background-color, #fff)
  }
 
 /* Box sizing */
