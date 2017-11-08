@@ -34,7 +34,8 @@
 @import '../01-modules/link-list/link-list.css';
 @import '../01-modules/navigation/nav-main-list/nav-main-list.css';
 @import '../01-modules/social-media-collection/social-media-collection.css';
-@import '../01-modules/topbar/topbar.css';
+@import '../01-modules/topbar/topbar/topbar.css';
+@import '../01-modules/topbar/topbar-simple/topbar-simple.css';
 
 
 /* Components
