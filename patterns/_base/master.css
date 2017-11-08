@@ -28,6 +28,7 @@
 ********************/
 @import '../01-modules/box/box/box.css';
 @import '../01-modules/box/box-image/box-image.css';
+@import '../01-modules/box/icon-box/icon-box.css';
 @import '../01-modules/box/text-box/text-box.css';
 @import '../01-modules/form-field/form-field.css';
 @import '../01-modules/form-field-inverted/form-field-inverted.css';
