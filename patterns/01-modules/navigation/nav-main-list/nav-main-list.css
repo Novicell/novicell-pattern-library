@@ -10,7 +10,7 @@
 .nav-main {
     display: none;
 
-    @media (--viewport-sm-min) {
+    @media (--viewport-md-min) {
         display: block;
     }
 }
