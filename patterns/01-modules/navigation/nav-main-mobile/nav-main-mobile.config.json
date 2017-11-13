@@ -2,7 +2,7 @@
 	"title": "Navigation mobile",
 	"status": "prototype",
 	"context": {
-        "nav-trigger-text": "Menu",
+        "nav-trigger-text": "",
 		"nav-close-text":"Luk menu",
 		"link-list": [
 			{

@@ -3,9 +3,11 @@
     --nav-main-mobile-background-color:  var(--color-white, #fff);
     --nav-main-mobile-close:             var(--color-gray-dark, #4b4b4b);
     --nav-main-mobile-margin:            20px;
-    --nav-main-mobile-padding:           20px;
+    --nav-main-mobile-padding-left:      20px;
+    --nav-main-mobile-padding-right:     20px;
+    --nav-main-mobile-padding-top:       35px;
     --nav-main-mobile-left:              20px;
-    --nav-main-mobile-top:               20px;
+    --nav-main-mobile-top:               35px;
 }
 
 .nav-main-mobile {
@@ -45,7 +47,9 @@
         z-index: 1;
         overflow: auto;
         transition: left .2s var(--nav-main-mobile-project-ease);
-        padding: var(--nav-main-mobile-padding);
+        padding-left: var(--nav-main-mobile-padding-left);
+        padding-right: var(--nav-main-mobile-padding-right);
+        padding-top: var(--nav-main-mobile-padding-top);
     }
 
     &__link-list {
