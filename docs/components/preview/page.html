@@ -3,14 +3,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link media="all" rel="stylesheet" href="../../css/master.min.css">
-  <title>Page: Default</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media="all" rel="stylesheet" href="../../css/master.min.css">
+    <title>Page: Default</title>
 </head>
 <body>
 
 <header role="banner">
-  <div class="topbar">
+    <nav class="nav-main-mobile" id="nav-main-mobile" role="navigation" vocab="http://schema.org/" typeof="SiteNavigationElement">
+		<label class="nav-trigger" for="nav-main-mobile__check">
+			<span class="nav-trigger__burger"><span class="nav-trigger__burger-inner"></span></span>
+			<span class="nav-trigger__text"></span>
+		</label>
+	<input type="radio" class="nav-main-mobile__check" id="nav-main-mobile__check" name="nav-main-mobile__check" />
+	<input type="radio" class="nav-main-mobile__check nav-main-mobile__check--uncheck" id="nav-main-mobile__uncheck" name="nav-main-mobile__check" />
+	<div class="nav-main-mobile__offcanvas">
+		<label for="nav-main-mobile__uncheck" id="nav-main-mobile__close-offcanvas" class="nav-main-mobile__close-offcanvas">Luk menu</label>
+        <div class="nav-main-mobile__link-list">
+            <ul class="link-list">
+                    <li class="link-list__item ">
+                        <a href="#" title="Link title 1" target="" class="link " property="url">Link text 1</a>
+                    </li>
+                    <li class="link-list__item ">
+                        <a href="#" title="Link title 2" target="" class="link " property="url">Link text 2</a>
+                    </li>
+            </ul>
+        </div>
+	</div>
+</nav>
+
+    <div class="topbar">
 <div class="grid-container grid-container--site-width">
 <div class="grid-row ">
 <div class="grid-column">
@@ -48,7 +71,7 @@
 </div>
 </div>
 
-  <div class="hero" style="background-image: url(../../images/placeholder-images/hero--mona-eendra-313518.jpg )">
+    <div class="hero" style="background-image: url(../../images/placeholder-images/hero--mona-eendra-313518.jpg )">
 <div class="grid-container grid-container--site-width">
 <div class="grid-column">
           <div class="hero__content">
