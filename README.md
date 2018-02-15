@@ -1,3 +1,6 @@
+# DEPRECATED USE NOVICELL-FRONTEND INSTEAD
+
+
 # Novicell Pattern Library
 
 #### Getting started
