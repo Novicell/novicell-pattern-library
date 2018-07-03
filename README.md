@@ -1,5 +1,7 @@
 # DEPRECATED USE NOVICELL-FRONTEND INSTEAD
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Novicell/novicell-pattern-library.svg)](https://greenkeeper.io/)
+
 
 # Novicell Pattern Library
 
